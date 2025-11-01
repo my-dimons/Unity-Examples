@@ -40,6 +40,33 @@ public static class SFXManager
 
     private static void PlayClip(AudioClip clip, float volume, float pitchVariance, Vector3 position = default)
     {
-       
+        GameObjec temporaryGameObject = new("Audio Clip (Temporary)");
+        temporaryGameObject.transform.parent = null;
+
+        // set to global or spacial audio
+        if (position = default)
+        {
+            temporaryGameObject.transform.position = Camera.main.transform.position;
+            audioSource.spatialBlend = 0f; // 2D sound
+        } 
+        else
+        {
+            temporaryGameObject.transform.position = position;
+            audioSource.spatialBlend = 1f; // 3D sound
+        }
+
+        // Set up AudioSource
+        AudioSource audioSource = temporaryGameObject.AddComponent<AudioSource>();
+        audioSource.clip = clip;
+        audioSource.volume = AudioManager.GetVolumeBasedOnType(volume, AudioManager.VolumeTypes.sfx);
+
+        float randomPitch = Random.Range(1 - pitchVariance, 1 + pitchVariance);
+        audioSource.pitch = randomPitch;
+
+        audioSource.Play();
+
+
+        float destroyTime = clip.length / audioSource.pitch;
+        Destroy(temporaryGameObject, destroyTime);
     }
 }

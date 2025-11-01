@@ -15,6 +15,10 @@ public class MusicManager : MonoBehaviour
     [Tooltip("Immedietely start playing music when this object loads in")]
     public bool playOnAwake = true;
 
+    public float fadeTime;
+    public float cooldownBetweenSongs;
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,6 +39,13 @@ public class MusicManager : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Plays one music clip
+    /// </summary>
+    public void PlayOneShotMusic()
+    {
+
+    }
     /// <summary>
     /// Force stop music
     /// </summary>
