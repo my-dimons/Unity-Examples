@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Audio;
 
 /*
  * To setup this script:
@@ -11,11 +10,11 @@ using UnityEngine.Audio;
  *  To play audio on a set audio audioSource (such as a character or object), use "PlayClipOnSource()"
  */
 
-public class SFXManager : MonoBehaviour
+public class SfxManager : MonoBehaviour
 {
     private static readonly float DEFAULT_PITCH_VARIANCE = 0.1f;
 
-    public static SFXManager Instance { get; private set; }
+    public static SfxManager Instance { get; private set; }
 
     private void Awake()
     {
@@ -61,11 +60,7 @@ public class SFXManager : MonoBehaviour
     /// <summary>
     /// Plays an AudioClip on an already existing AudioSource at a certain volume with a pitch variance (to feel less repetative)
     /// </summary>
-    /// <param name="clip">Audio audioClip to play</param>
-    /// <param name="source">Audio audioSource to play audioClip on</param>
     /// <param name="volume">Volume to play audio audioClip at</param>
-    /// Random variance to make sound feel less repetative. 
-    /// adds/subtracts a random pitch to the set audio clips pitch within the range of -pitchVariance, and pitchVariance 
     /// <param name="audioType">used to get the proper volume (does multiplication to set volume levels)</param>
     public static void PlayClipOnSource(AudioClip clip, AudioSource source, float volume = 1, float pitchVariance = default, AudioManager.AudioType audioType = default)
     {
@@ -82,11 +77,10 @@ public class SFXManager : MonoBehaviour
         GameObject temporaryGameObject = new GameObject("Audio Clip (Temporary)");
         AudioSource audioSource = temporaryGameObject.AddComponent<AudioSource>();
 
-        Transform temporaryGameObjectParent = temporaryGameObject.transform.parent;
         if (parent == default)
-            temporaryGameObjectParent = null;
+            temporaryGameObject.transform.parent = null;
         else
-            temporaryGameObjectParent = parent;
+            temporaryGameObject.transform.parent = parent;
 
         // set to global or spacial audio
         if (position == default)

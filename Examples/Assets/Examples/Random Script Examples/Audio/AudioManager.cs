@@ -1,3 +1,4 @@
+using NUnit.Framework.Constraints;
 using System;
 using UnityEngine;
 
@@ -29,24 +30,17 @@ public static class AudioManager
     public static float sfxVolume;
 
     /// <summary>
-    /// Does multiplication to certain volume types (To get right audio levels)
+    /// Does multiplication to volume types to the get right audio levels
     /// </summary>
-    /// <param name="baseVolume">Volume to convert</param>
-    /// <param name="type">Type of audio, use AudioType.global to just multiply by global volume</param>
-    /// <returns></returns>
-    public static float GetVolumeBasedOnType(float baseVolume, AudioType type)
+    public static float GetVolumeBasedOnType(float volume, AudioType audioType) => audioType switch
     {
-        float baseVolumeMutliplied = baseVolume * globalVolume;
+        AudioType.sfx => MultiplyByGlobalVolume(volume) * sfxVolume,
+        AudioType.music => MultiplyByGlobalVolume(volume) * musicVolume,
+        AudioType.global => MultiplyByGlobalVolume(volume),
+        _ => MultiplyByGlobalVolume(volume),
+    };
 
-        switch (type)
-        {
-            case AudioType.sfx: return baseVolumeMutliplied * sfxVolume;
-            case AudioType.music: return baseVolumeMutliplied * musicVolume;
-            case AudioType.global: return baseVolumeMutliplied;
-
-            default: return baseVolumeMutliplied;
-        }
-    }
+    private static float MultiplyByGlobalVolume(float volume) => volume * globalVolume;
 }
 
 /// <summary>

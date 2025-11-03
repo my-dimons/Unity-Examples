@@ -25,12 +25,6 @@ public class MusicManager : MonoBehaviour
         PlayMusic();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     /// <summary>
     /// Force play music
     /// </summary>
