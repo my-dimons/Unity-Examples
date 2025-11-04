@@ -48,6 +48,10 @@ public class BackgroundMusicManager : MonoBehaviour
             musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.AudioType.music);
     }
 
+    /// <summary>
+    /// Loops through random songs in <see cref="musicTracks"/> constantly
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator PlayMusicContinuously()
     {
         while (true)
@@ -65,6 +69,9 @@ public class BackgroundMusicManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Stops the <see cref="musicSource"/> from playing music and looping until <see cref="PlayMusicContinuously"/> is called again (to start looping)
+    /// </summary>
     public void StopMusic()
     {
         if (Instance.musicSource.isPlaying)
@@ -79,6 +86,9 @@ public class BackgroundMusicManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Starts to <see cref="PlayMusicContinuously"/> until stopped
+    /// </summary>
     public void StartContinuousMusic()
     {
         if (!Instance.musicSource.isPlaying && musicTracks.Length > 0)
@@ -89,6 +99,10 @@ public class BackgroundMusicManager : MonoBehaviour
             Debug.LogWarning("Tried starting continuous music but music source is already playing!");
     }
 
+    /// <summary>
+    /// Plays a music track on the <see cref="musicSource"/>
+    /// </summary>
+    /// <param name="clip<see cref="AudioClip"/> too play"></param>
     private void PlayMusicTrack(AudioClip clip)
     {
         musicSource.clip = clip;
@@ -99,16 +113,27 @@ public class BackgroundMusicManager : MonoBehaviour
         Debug.Log($"Playing: {clip.name}");
     }
 
+    /// <summary>
+    /// Plays a random music track once
+    /// </summary>
     public void PlaySingleRandomMusicTrack()
     {
         PlayMusicTrack(GetRandomSong());
     }
 
+    /// <summary>
+    /// Plays a specific music track once
+    /// </summary>
+    /// <param name="clip"><see cref="AudioClip"/> to play</param>
     public void PlaySpecificMusicTrack(AudioClip clip)
     {
         Instance.PlayMusicTrack(clip);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns>Random music track within the <see cref="musicTracks"/> array</returns>
     private AudioClip GetRandomSong()
     {
         int randomSongTrackIndex = Random.Range(0, musicTracks.Length);
