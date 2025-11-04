@@ -7,14 +7,13 @@ using UnityEngine;
 /// </summary>
 public static class AudioManager
 {
-    // To add more volume types, add more properties to this array and then update GetVolumeBasedOnType()
+    // To add more volume types, add more properties to this array and then update
     public enum AudioType
     {
         sfx,
         music,
         global
     }
-
     [Range(0f, 1f)]
     [Tooltip("All volume is multiplied by this value")]
     public static float globalVolume;
@@ -32,7 +31,7 @@ public static class AudioManager
     /// <summary>
     /// Does multiplication to volume types to the get right audio levels
     /// </summary>
-    public static float GetVolumeBasedOnType(float volume, AudioType audioType) => audioType switch
+    public static float CalculateVolumeBasedOnType(float volume, AudioType audioType) => audioType switch
     {
         AudioType.sfx => MultiplyByGlobalVolume(volume) * sfxVolume,
         AudioType.music => MultiplyByGlobalVolume(volume) * musicVolume,
@@ -42,23 +41,3 @@ public static class AudioManager
 
     private static float MultiplyByGlobalVolume(float volume) => volume * globalVolume;
 }
-
-/// <summary>
-/// Holds variables/functions for other audio scripts (Such as global volume), but is a singleton so it can be used in the unity editor
-/// </summary>
-/*public class AudioManagerObject : MonoBehaviour
-{
-    public class Testing
-    {
-
-    }
-    public static AudioManagerObject Instance;
-
-    private void Start()
-    {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(this);
-    }
-}*/

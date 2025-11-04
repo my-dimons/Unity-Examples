@@ -18,22 +18,19 @@ public class SfxManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
+        if (Instance == null) Instance = this; else Destroy(gameObject);
     }
 
     /// <summary>
-    /// Plays an audio audioClip globaly (Not using spacial audio), at a set volume with a pitch variance (to feel less repetative)
+    /// Plays an <see cref="AudioClip"/> globally (non-spacialy) at a certain volume with a pitch variance (to feel less repetative)
     /// </summary>
-    /// <param name="clip">Audio audioClip to play</param>
-    /// <param name="volume">Volume to play audio audioClip at</param>
+    /// <param name="clip"><see cref="AudioClip"/> to play</param>
+    /// <param name="volume">Playback volume</param>
     /// <param name="pitchVariance">
     /// Random variance to make sound feel less repetative. 
     /// adds/subtracts a random pitch to the set audio clips pitch within the range of -pitchVariance, and pitchVariance 
     /// </param>
-    public static void PlaySfxAudioClip(AudioClip clip, float volume = 1, float pitchVariance = default)
+    public void PlaySfxAudioClip(AudioClip clip, float volume = 1, float pitchVariance = default)
     {
         if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
 
@@ -41,16 +38,16 @@ public class SfxManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Plays an audio audioClip spacialy (Changes volume and L/R volume channel based on location) at a certain volume with a pitch variance (to feel less repetative)
+    /// Plays an <see cref="AudioClip"/> spacially (Changes volume and L/R volume channel based on location) at a certain volume with a pitch variance (to feel less repetative)
     /// </summary>
-    /// <param name="clip">Audio audioClip to play</param>
-    /// <param name="position">Position to play audio audioClip at</param>
-    /// <param name="volume">Volume to play audio audioClip at</param>
+    /// <param name="clip"><see cref="AudioClip"/> to play</param>
+    /// <param name="position">Position to play <see cref="AudioClip"/> at</param>
+    /// <param name="volume">Playback volume</param>
     /// <param name="pitchVariance">
     /// Random variance to make sound feel less repetative. 
     /// adds/subtracts a random pitch to the set audio clips pitch within the range of -pitchVariance, and pitchVariance 
     /// </param>
-    public static void PlaySpacialSfxAudioClip(AudioClip clip, Vector3 position, float volume = 1, float pitchVariance = default)
+    public void PlaySpacialSfxAudioClip(AudioClip clip, Vector3 position, float volume = 1, float pitchVariance = default)
     {
         if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
 
@@ -58,19 +55,18 @@ public class SfxManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Plays an AudioClip on an already existing AudioSource at a certain volume with a pitch variance (to feel less repetative)
+    /// Plays an <see cref="AudioClip"/> on an already existing <see cref="AudioSource"/> at a certain volume with a pitch variance (to feel less repetative)
     /// </summary>
-    /// <param name="volume">Volume to play audio audioClip at</param>
-    /// <param name="audioType">used to get the proper volume (does multiplication to set volume levels)</param>
-    public static void PlayClipOnSource(AudioClip clip, AudioSource source, float volume = 1, float pitchVariance = default, AudioManager.AudioType audioType = default)
+    /// <param name="volume">Playback volume</param>
+    /// <param name="audioType">used to get the proper volume, see <see cref="AudioManager.CalculateVolumeBasedOnType(float, AudioManager.AudioType)"/> to get more info</param>
+    public void PlayClipOnSource(AudioClip clip, AudioSource source, float volume = 1, float pitchVariance = default, AudioManager.AudioType audioType = AudioManager.AudioType.sfx)
     {
         if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
-        if (audioType == default) audioType = AudioManager.AudioType.sfx;
 
         PlayAudioClipOnSource(clip, source, volume, pitchVariance, audioType);
     }
 
-    private static void CreateAndPlayAudioClip(AudioClip clip, float volume, float pitchVariance, Vector3 position = default, Transform parent = default, AudioManager.AudioType type = default)
+    private void CreateAndPlayAudioClip(AudioClip clip, float volume, float pitchVariance, Vector3 position = default, Transform parent = default, AudioManager.AudioType type = AudioManager.AudioType.sfx)
     {
         if (type == default) type = AudioManager.AudioType.sfx;
 
@@ -100,10 +96,10 @@ public class SfxManager : MonoBehaviour
         Destroy(temporaryGameObject, destroyTime);
     }
 
-    private static void PlayAudioClipOnSource(AudioClip audioClip, AudioSource audioSource, float volume, float pitchVariance, AudioManager.AudioType audioType)
+    private void PlayAudioClipOnSource(AudioClip audioClip, AudioSource audioSource, float volume, float pitchVariance, AudioManager.AudioType audioType)
     {
         audioSource.clip = audioClip;
-        audioSource.volume = AudioManager.GetVolumeBasedOnType(volume, audioType);
+        audioSource.volume = AudioManager.CalculateVolumeBasedOnType(volume, audioType);
 
         float randomPitch = Random.Range(1 - pitchVariance, 1 + pitchVariance);
         audioSource.pitch = randomPitch;
