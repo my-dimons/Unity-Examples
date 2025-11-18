@@ -12,7 +12,7 @@ using UnityEngine;
 
 public class SfxManager : MonoBehaviour
 {
-    private static readonly float DEFAULT_PITCH_VARIANCE = 0.1f;
+    private const float DEFAULT_PITCH_VARIANCE = 0.1f;
 
     public static SfxManager Instance { get; private set; }
 
