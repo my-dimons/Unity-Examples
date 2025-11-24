@@ -3,6 +3,7 @@ using UnityEngine;
 
 
 /*
+ * This is a static class, do not add it to any objects 
  *
  * TO CREATE MORE AUDIO TYPES
  * ---
@@ -10,6 +11,7 @@ using UnityEngine;
  * 2. Add a new custom volume variable like the ones below
  * 3. Add another condition to the 'CalculateVolumeBasedOnType(float volume, AudioType audioType)' switch function
  * 
+ * Requires the BackgroundMusicManager.cs and SfxManager.cs scripts to work properly
  */
 
 /// <summary>
@@ -17,7 +19,6 @@ using UnityEngine;
 /// </summary>
 public static class AudioManager
 {
-
     // To add more volume types, add more properties to this array and then update
     public enum AudioType
     {
@@ -60,4 +61,14 @@ public static class AudioManager
     };
 
     private static float MultiplyByGlobalVolume(float volume) => volume * globalVolume;
+
+    /// <summary>
+    /// Calculates the effective playback duration of an audio clip after adjusting for pitch
+    /// </summary>
+    public static float CalculateClipLength(float clipLength, float pitch) => clipLength / Math.Abs(pitch);
+
+    /// <summary>
+    /// Calculates the pitch adjustment factor needed to play an audio clip at a specified duration
+    /// </summary>
+    public static float CalculateClipPitchWithLength(float clipLength, float time) => clipLength * time;
 }

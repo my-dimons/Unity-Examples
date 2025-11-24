@@ -12,6 +12,9 @@ using UnityEngine;
 
 public class SfxManager : MonoBehaviour
 {
+    [Tooltip("If true, this object will persist through all scenes")]
+    public bool dontDestroyOnLoad = true;
+
     private const float DEFAULT_PITCH_VARIANCE = 0.1f;
 
     public static SfxManager Instance { get; private set; }
@@ -19,6 +22,9 @@ public class SfxManager : MonoBehaviour
     private void Awake()
     {
         if (Instance == null) Instance = this; else Destroy(gameObject);
+
+        if (dontDestroyOnLoad)
+            DontDestroyOnLoad(gameObject);
     }
 
     /// <summary>
@@ -38,6 +44,19 @@ public class SfxManager : MonoBehaviour
     }
 
     /// <summary>
+    /// Plays an <see cref="AudioClip"/> globally (non-spacialy) at a certain volume for a set amount of time
+    /// </summary>
+    /// <param name="clip"><see cref="AudioClip"/> to play</param>
+    /// <param name="time">Specified time for <see cref="AudioClip"/> to play for</param>
+    /// <param name="volume">Playback volume</param>
+    public void PlayTimedSFXAudioClip(AudioClip clip, float time, float volume = 1)
+    {
+        float clipLength = AudioManager.CalculateClipPitchWithLength(clip.length, time);
+
+        CreateAndPlayAudioClip(clip, volume, pitch: clipLength, type: AudioManager.AudioType.sfx);
+    }
+
+    /// <summary>
     /// Plays an <see cref="AudioClip"/> spacially (Changes volume and L/R volume channel based on location) at a certain volume with a pitch variance (to feel less repetative)
     /// </summary>
     /// <param name="clip"><see cref="AudioClip"/> to play</param>
@@ -51,7 +70,7 @@ public class SfxManager : MonoBehaviour
     {
         if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
 
-        CreateAndPlayAudioClip(clip, volume, pitchVariance, position, type: AudioManager.AudioType.sfx);
+        CreateAndPlayAudioClip(clip, volume, pitchVariance, position: position, type: AudioManager.AudioType.sfx);
     }
 
     /// <summary>
@@ -70,7 +89,7 @@ public class SfxManager : MonoBehaviour
         PlayAudioClipOnSource(clip, source, volume, pitchVariance, audioType);
     }
 
-    private void CreateAndPlayAudioClip(AudioClip clip, float volume, float pitchVariance, Vector3 position = default, Transform parent = default, AudioManager.AudioType type = AudioManager.AudioType.sfx)
+    private void CreateAndPlayAudioClip(AudioClip clip, float volume = 1, float pitchVariance = 0, float pitch = default, Vector3 position = default, Transform parent = default, AudioManager.AudioType type = AudioManager.AudioType.sfx)
     {
         if (type == default) type = AudioManager.AudioType.sfx;
 
@@ -94,20 +113,24 @@ public class SfxManager : MonoBehaviour
             audioSource.spatialBlend = 1f; // 3D sound
         }
 
-        PlayAudioClipOnSource(clip, audioSource, volume, pitchVariance, type);
+        if (pitch == default)
+            PlayAudioClipOnSource(clip, audioSource, volume, pitchVariance, type);
+        else
+            PlayAudioClipOnSource(clip, audioSource, volume, 0f, type, pitch);
 
-        float destroyTime = clip.length / audioSource.pitch;
+        float destroyTime = AudioManager.CalculateClipLength(clip.length, audioSource.pitch);
         Destroy(temporaryGameObject, destroyTime);
     }
 
-    private void PlayAudioClipOnSource(AudioClip audioClip, AudioSource audioSource, float volume, float pitchVariance, AudioManager.AudioType audioType)
+    private void PlayAudioClipOnSource(AudioClip audioClip, AudioSource audioSource, float volume, float pitchVariance = default, AudioManager.AudioType audioType = AudioManager.AudioType.sfx, float pitch = default)
     {
         audioSource.clip = audioClip;
         audioSource.volume = AudioManager.CalculateVolumeBasedOnType(volume, audioType);
 
         float randomPitch = Random.Range(1 - pitchVariance, 1 + pitchVariance);
-        audioSource.pitch = randomPitch;
+        float usedPitch = pitch == default ? randomPitch : pitch;
+        audioSource.pitch = usedPitch;
 
-        audioSource.Play();        
+        audioSource.Play();
     }
 }
