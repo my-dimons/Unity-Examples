@@ -2,9 +2,7 @@ SFXManager
 ==========
 
 **NAMESPACE:**
-.. code:: csharp
-
-   UnityUtils.ScriptUtils.Audio
+   `UnityUtils.ScriptUtils.Audio`
    
 Example Usage
 -------------
@@ -12,6 +10,7 @@ Example Usage
   
    using UnityEngine;
    using UnityUtils.ScriptUtils.Audio;
+   
    public class ExampleScript : MonoBehaviour
    {
    	public AudioClip clip;
