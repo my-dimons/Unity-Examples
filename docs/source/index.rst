@@ -17,6 +17,9 @@ Contents
 
    usage
    api
+   sfxmanager
+   backgroundmusicmanager
+   audiomanager
 
 
 Test
