@@ -14,12 +14,12 @@ Contents
 --------
 
 .. toctree::
-
+   
    usage
    api
    script_utils/sfxmanager
-   script_utils/backgroundmusicmanager
-   script_utils/audiomanager
+   	script_utils/backgroundmusicmanager
+   	script_utils/audiomanager
 
 
 Test
