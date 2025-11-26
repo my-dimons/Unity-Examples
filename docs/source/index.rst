@@ -20,12 +20,4 @@ Usage
    
    usage
    api
-
-Audio
-~~~~~
-
-.. toctree::
-   
-   script_utils/sfxmanager
-   script_utils/backgroundmusicmanager
-   script_utils/audiomanager
+   script_utils/audio/audio
