@@ -7,8 +7,8 @@ Installation
 ------------
 .. warning::
 
-	This page is yet to be updated 
-
+   This is a warning message that will be highlighted.
+   
 To use Lumache, first install it using pip:
 
 .. code-block:: console
