@@ -2,14 +2,14 @@ SFXManager
 ==========
 
 NAMESPACE
----------
-.. code::
+~~~~~~~~~
+.. code:: csharp
 
    UnityUtils.ScriptUtils.Audio
    
 Example Usage
 -------------
-.. code::
+.. code:: csharp
   
    using UnityEngine;
    using UnityUtils.ScriptUtils.Audio;
