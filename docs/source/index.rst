@@ -16,6 +16,4 @@ Contents
 .. toctree::
 
    usage
-   sfxmanager
-   audiomanager
    api
