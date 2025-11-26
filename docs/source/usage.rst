@@ -7,7 +7,7 @@ Installation
 ------------
 .. warning::
 
-   THIS FILE HAS NOT BEEN UPDATED
+   THIS FILE HAS NOT BEEN UPDATED.
    
 To use Lumache, first install it using pip:
 
