@@ -20,4 +20,4 @@ Usage
    
    usage
    api
-   script_utils/audio/audio
+   script_utils/scriptutils
