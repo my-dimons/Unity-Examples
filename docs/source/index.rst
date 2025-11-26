@@ -17,9 +17,9 @@ Contents
 
    usage
    api
-   sfxmanager
-   backgroundmusicmanager
-   audiomanager
+   script_utils/sfxmanager
+   script_utils/backgroundmusicmanager
+   script_utils/audiomanager
 
 
 Test
