@@ -16,18 +16,24 @@ using System.Collections;
 namespace UnityUtils.ScriptUtils.Audio {
     public class BackgroundMusicManager : MonoBehaviour
     {
+        /// The audio source component used to play the background music.
         public AudioSource musicSource;
+
+        /// An array of audio clips representing the available music tracks.
         public AudioClip[] musicTracks;
         [Space(4)]
+
+        /// The current playing track
         public AudioClip currentPlayingTrack;
         [Space(8)]
 
-        [Tooltip("Immedietely start playing music when this object loads in")]
+        /// Whether to start playing music as soon as this object awakes
         public bool playOnAwake = true;
 
+        /// The duration, in seconds, over which the fade in/out effect occurs.
         public float fadeTime;
 
-        [Tooltip("If you want a single value cooldown, just set the values to the same value")]
+        /// Random cooldown time between songs in milliseconds
         public Vector2 randomMillisecondCooldownBetweenSongs;
 
         public static BackgroundMusicManager Instance { get; private set; }
@@ -105,7 +111,6 @@ namespace UnityUtils.ScriptUtils.Audio {
         /// <summary>
         /// Plays a music track on the <see cref="musicSource"/>
         /// </summary>
-        /// <param name="clip<see cref="AudioClip"/> too play"></param>
         private void PlayMusicTrack(AudioClip clip)
         {
             musicSource.clip = clip;
@@ -117,7 +122,7 @@ namespace UnityUtils.ScriptUtils.Audio {
         }
 
         /// <summary>
-        /// Plays a random music track once
+        /// Plays a random song in <see cref="musicTracks"/> once
         /// </summary>
         public void PlaySingleRandomMusicTrack()
         {
@@ -127,14 +132,13 @@ namespace UnityUtils.ScriptUtils.Audio {
         /// <summary>
         /// Plays a specific music track once
         /// </summary>
-        /// <param name="clip"><see cref="AudioClip"/> to play</param>
         public void PlaySpecificMusicTrack(AudioClip clip)
         {
             Instance.PlayMusicTrack(clip);
         }
 
-        /// <returns>Random music track within the <see cref="musicTracks"/> array</returns>
-        private AudioClip GetRandomSong()
+        /// <returns>Random music track within <see cref="musicTracks"/></returns>
+        public AudioClip GetRandomSong()
         {
             int randomSongTrackIndex = Random.Range(0, musicTracks.Length);
             return musicTracks[randomSongTrackIndex];

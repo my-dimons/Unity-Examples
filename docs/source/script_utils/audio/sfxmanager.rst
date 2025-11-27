@@ -4,9 +4,9 @@ SfxManager
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Audio`
   
-The *SfxManager* is used to easily play sound effects with preset volumes from the :doc:`AudioManager` script, and a random pitch variance.
+The *SfxManager* is used to easily play sound effects with preset volumes from the :doc:`AudioManager` script, and add random pitch variance.
 
-* default pitch variance is `0.1`
+* Default pitch variance is `0.1`
 
 Example Usage
 -------------
