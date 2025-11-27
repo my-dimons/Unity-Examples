@@ -8,7 +8,7 @@ AudioManager
 
    This script requires :doc:`AudioManager` to function properly.
    
-The **AudioManager** is used for managing audio types for things like sfx, and music. It provides functions for calculating volume type so you can 
+The **AudioManager** is used for managing audio types for things like sfx, and music. It provides functions for calculating volume based on a volume type so you can easily play sounds at a consistent volume!
 
 Example Usage
 -------------
@@ -31,7 +31,7 @@ Example Usage
         float exampleVolumeValue = AudioManager.GetVolume(VolumeType.global);
         
         // Multiply a volume by a volume types volume (For proper adjustments)
-        float exampleVolueValue2 = AudioManager.CalculateVolumeBasedOnType(1, 
+        float exampleVolueValue2 = AudioManager.CalculateVolumeBasedOnType(0.3f, VolumeType.sfx);
    }
    
 Functions

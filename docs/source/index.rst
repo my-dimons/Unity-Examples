@@ -8,7 +8,7 @@ how to :ref:`installation` the project.
 
 .. warning::
 
-   This project is under heavy active development.
+   This project is under heavy and (semi) rapid development.
 
 Contents
 --------
@@ -20,5 +20,4 @@ Usage
    :maxdepth: 2
    
    usage
-   api
    script_utils/scriptutils
