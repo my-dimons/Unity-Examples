@@ -25,6 +25,8 @@ breathe_projects = {
     "UnityUtils": os.path.join(os.path.dirname(__file__), "doxygen", "xml")
 }
 
+suppress_warnings = ["breathe.*"]
+
 breathe_default_project = "UnityUtils"
 
 intersphinx_mapping = {
