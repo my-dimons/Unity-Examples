@@ -37,5 +37,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Audio::BackgroundMusicManager
+.. doxygenclass:: UnityUtils::ScriptUtils::Audio::AudioManager
    :members:

@@ -42,7 +42,7 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a6fd1f7c5645bba7f225c6da90295242a" kind="function"><name>GetParticleSystem</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager" kind="class"><name>UnityUtils::ScriptUtils::ScriptableObjects::ScriptableObjectManager</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager_1a0e68637a519640a6525b9857162808ce" kind="function"><name>LoadScriptableObjects&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager_1ad376e448c4e3b09d4545ac4ccd881653" kind="function"><name>GetScriptableObjects&lt; T &gt;</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager" kind="class"><name>UnityUtils::ScriptUtils::Audio::SfxManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1a92fa5e3be797bbd9354ea22ef9dc036d" kind="variable"><name>DEFAULT_PITCH_VARIANCE</name></member>

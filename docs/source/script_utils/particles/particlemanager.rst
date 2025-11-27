@@ -19,9 +19,16 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
+   	public GameObject particlePrefab;
+   	public GameObject particles;
+   	
    	void Start()
    	{
-   	   // comment
+   	   // Spawn burst particles.
+   	   ParticleManager.SpawnBurstParticles(particlePrefab, Vector3.zero);
+   	   
+   	   // Set particle system colour.
+   	   ParticleManager.SetParticleSystemColor(particles, Color.blue);
    	}
    }
    
