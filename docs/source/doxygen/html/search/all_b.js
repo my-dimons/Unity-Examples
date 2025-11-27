@@ -4,7 +4,7 @@ var searchData=
   ['scriptableobjectmanager_2ecs_1',['ScriptableObjectManager.cs',['../_scriptable_object_manager_8cs.html',1,'']]],
   ['sfx_2',['sfx',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
   ['sfxmanager_3',['SfxManager',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html',1,'UnityUtils::ScriptUtils::Audio']]],
-  ['sfxmanager_2ecs_4',['SFXManager.cs',['../_s_f_x_manager_8cs.html',1,'']]],
+  ['sfxmanager_2ecs_4',['SfxManager.cs',['../_sfx_manager_8cs.html',1,'']]],
   ['sfxvolume_5',['sfxVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a6de561cb74f1e58163479ba7f3803e95',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
   ['singletonexample_6',['SingletonExample',['../class_singleton_example.html',1,'']]],
   ['singletonexample_2ecs_7',['SingletonExample.cs',['../_singleton_example_8cs.html',1,'']]],

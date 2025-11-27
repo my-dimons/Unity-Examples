@@ -85,7 +85,7 @@
   </compound>
   <compound refid="_background_music_manager_8cs" kind="file"><name>BackgroundMusicManager.cs</name>
   </compound>
-  <compound refid="_s_f_x_manager_8cs" kind="file"><name>SFXManager.cs</name>
+  <compound refid="_sfx_manager_8cs" kind="file"><name>SfxManager.cs</name>
   </compound>
   <compound refid="_particle_manager_8cs" kind="file"><name>ParticleManager.cs</name>
   </compound>
