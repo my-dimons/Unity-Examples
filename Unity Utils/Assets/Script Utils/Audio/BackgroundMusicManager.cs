@@ -16,6 +16,9 @@ using System.Collections;
 namespace UnityUtils.ScriptUtils.Audio {
     public class BackgroundMusicManager : MonoBehaviour
     {
+        /// <summary>
+        /// Represents the audio source used for playing music tracks.
+        /// </summary>
         public AudioSource musicSource;
         public AudioClip[] musicTracks;
         [Space(4)]
