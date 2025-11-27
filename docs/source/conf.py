@@ -1,10 +1,11 @@
+import os
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Unity Utils'
+copyright = '2025, mydimons'
+author = 'mydimons'
 
 release = '0.1'
 version = '0.1.0'
@@ -17,7 +18,16 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'breathe'
 ]
+
+breathe_projects = {
+    "UnityUtils": os.path.join(os.path.dirname(__file__), "doxygen", "xml")
+}
+
+suppress_warnings = ["breathe.*"]
+
+breathe_default_project = "UnityUtils"
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
