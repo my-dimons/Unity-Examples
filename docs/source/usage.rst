@@ -5,33 +5,20 @@ Usage
 
 Installation
 ------------
-.. warning::
+.. note::
 
-   THIS FILE HAS NOT BEEN UPDATED FOR INSTALL INFO YET.
+   This install method will change soon, as I will be moving to the unity package manager soon.
    
-To use Lumache, first install it using pip:
+Installing Unity Utils
+~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: console
+1. To install Unity Utils, first go to the `Unity Utils GitHub <https://github.com/my-dimons/Unity-Utils/tree/main>`_.
+2. Click the green button and download the project as a .zip.
+3. Unzip the downloaded file.
+4. Finally load the folder "Unity Utils" inside the extracted file into Unity Hub and launch!
 
-   (.venv) $ pip install lumache
+Downloading Script Utils
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+1. Find the specific `Script Utils <https://github.com/my-dimons/Unity-Utils/tree/main/Unity%20Utils/Assets/Script%20Utils>`_ you want to import into your game.
+2. Download these scripts, then drag them into your unity project.
