@@ -1,3 +1,4 @@
+import os
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
@@ -21,7 +22,7 @@ extensions = [
 ]
 
 breathe_projects = {
-    "UnityUtils": "./doxygen/xml"
+    "UnityUtils": os.path.join(os.path.dirname(__file__), "doxygen", "xml")
 }
 
 breathe_default_project = "UnityUtils"
