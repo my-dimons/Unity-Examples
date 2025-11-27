@@ -11,12 +11,13 @@
         <name>musicSource</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.musicSource</qualifiedname>
         <briefdescription>
+<para>Represents the audio source used for playing music tracks. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="19" column="28" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="19" bodyend="-1"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="20" column="28" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a7122a46cd1682d4a54d9d944e3fcba47" prot="public" static="no" mutable="no">
         <type>AudioClip[]</type>
@@ -30,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="20" column="26" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="20" bodyend="-1"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="21" column="26" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a8516d30b183420e61f6d3d6117311740" prot="public" static="no" mutable="no">
         <type>AudioClip</type>
@@ -44,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="22" column="26" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="22" bodyend="-1"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="23" column="26" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a848c527693d5daa4b2f091434d7d3e68" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -54,12 +55,13 @@
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.playOnAwake</qualifiedname>
         <initializer>= true</initializer>
         <briefdescription>
+<para>If true, music will start playing as soon as this object loads in. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="25" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="25" bodyend="-1"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="28" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0656ccefce385481e6057ebfbbc6bff" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -68,12 +70,13 @@
         <name>fadeTime</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.fadeTime</qualifiedname>
         <briefdescription>
+<para>The duration, in seconds, over which the fade effect occurs. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="27" column="22" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="27" bodyend="-1"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="31" column="22" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a49c63e55a37e3711101180af223d4954" prot="public" static="no" mutable="no">
         <type>Vector2</type>
@@ -82,12 +85,13 @@
         <name>randomMillisecondCooldownBetweenSongs</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.randomMillisecondCooldownBetweenSongs</qualifiedname>
         <briefdescription>
+<para>Vector2 representing the range of cooldown time (in seconds) between songs. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="29" column="24" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="29" bodyend="-1"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="35" column="24" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1acc76051508dd5d6bfb0e45bdc8e0dc78" prot="public" static="no" mutable="no">
         <type>Coroutine</type>
@@ -101,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="33" column="26" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="33" bodyend="-1"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="39" column="26" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="39" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -117,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="31" column="46" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="31" bodyend="31"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="37" column="46" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="37" bodyend="37"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -133,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="35" column="14" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="35" bodyend="44"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="41" column="14" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="41" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ba8af91b478bed6d5076c57601e8e4c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -147,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="46" column="22" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="46" bodyend="50"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="52" column="22" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="52" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1af5207aed4c35c06f1a54c2c1ceffadd0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
@@ -162,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="55" column="29" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="55" bodyend="70"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="61" column="29" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="61" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ca4c7180757cf91bea35dcdcc6adae3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -182,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="107" column="22" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="107" bodyend="115"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="113" column="22" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="113" bodyend="121"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>AudioClip</type>
@@ -199,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="135" column="27" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="135" bodyend="139"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="141" column="27" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="141" bodyend="145"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -216,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="75" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="75" bodyend="87"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="81" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="81" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a04ced0973b67e3cc4830767edfacb606" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -231,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="92" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="92" bodyend="101"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="98" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="98" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a79053ee109f1122d6530632b6ed21fe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -246,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="120" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="120" bodyend="123"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="126" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="126" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4164aeed2aa479da81a8eb2aa2209868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -275,7 +279,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="129" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="129" bodyend="132"/>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="135" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="135" bodyend="138"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -304,7 +308,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="17" column="11" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="18" bodyend="140"/>
+    <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="17" column="11" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="18" bodyend="146"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a598e1bdd4226b117a07a7a8d6ee29e2e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>Awake</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a8516d30b183420e61f6d3d6117311740" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>currentPlayingTrack</name></member>

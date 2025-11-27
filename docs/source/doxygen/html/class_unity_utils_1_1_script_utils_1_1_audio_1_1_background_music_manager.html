@@ -101,7 +101,7 @@ Inheritance diagram for UnityUtils.ScriptUtils.Audio.BackgroundMusicManager:</di
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a82e502951ecdb1a090d31f684b3a5cd8" id="r_a82e502951ecdb1a090d31f684b3a5cd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82e502951ecdb1a090d31f684b3a5cd8">StopMusic</a> ()</td></tr>
-<tr class="memdesc:a82e502951ecdb1a090d31f684b3a5cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the <a class="el" href="#aa1877f5498b9668610fcc15140a990c5">musicSource</a> from playing music and looping until PlayMusicContinuously is called again (to start looping).  <br /></td></tr>
+<tr class="memdesc:a82e502951ecdb1a090d31f684b3a5cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the <a class="el" href="#aa1877f5498b9668610fcc15140a990c5" title="Represents the audio source used for playing music tracks.">musicSource</a> from playing music and looping until PlayMusicContinuously is called again (to start looping).  <br /></td></tr>
 <tr class="memitem:a04ced0973b67e3cc4830767edfacb606" id="r_a04ced0973b67e3cc4830767edfacb606"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04ced0973b67e3cc4830767edfacb606">StartContinuousMusic</a> ()</td></tr>
 <tr class="memdesc:a04ced0973b67e3cc4830767edfacb606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts to PlayMusicContinuously until stopped.  <br /></td></tr>
 <tr class="memitem:a79053ee109f1122d6530632b6ed21fe2" id="r_a79053ee109f1122d6530632b6ed21fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79053ee109f1122d6530632b6ed21fe2">PlaySingleRandomMusicTrack</a> ()</td></tr>
@@ -112,11 +112,15 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa1877f5498b9668610fcc15140a990c5" id="r_aa1877f5498b9668610fcc15140a990c5"><td class="memItemLeft" align="right" valign="top">AudioSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1877f5498b9668610fcc15140a990c5">musicSource</a></td></tr>
+<tr class="memdesc:aa1877f5498b9668610fcc15140a990c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the audio source used for playing music tracks.  <br /></td></tr>
 <tr class="memitem:a7122a46cd1682d4a54d9d944e3fcba47" id="r_a7122a46cd1682d4a54d9d944e3fcba47"><td class="memItemLeft" align="right" valign="top">AudioClip[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7122a46cd1682d4a54d9d944e3fcba47">musicTracks</a></td></tr>
 <tr class="memitem:a8516d30b183420e61f6d3d6117311740" id="r_a8516d30b183420e61f6d3d6117311740"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8516d30b183420e61f6d3d6117311740">currentPlayingTrack</a></td></tr>
 <tr class="memitem:a848c527693d5daa4b2f091434d7d3e68" id="r_a848c527693d5daa4b2f091434d7d3e68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a848c527693d5daa4b2f091434d7d3e68">playOnAwake</a> = true</td></tr>
+<tr class="memdesc:a848c527693d5daa4b2f091434d7d3e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, music will start playing as soon as this object loads in.  <br /></td></tr>
 <tr class="memitem:aa0656ccefce385481e6057ebfbbc6bff" id="r_aa0656ccefce385481e6057ebfbbc6bff"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0656ccefce385481e6057ebfbbc6bff">fadeTime</a></td></tr>
+<tr class="memdesc:aa0656ccefce385481e6057ebfbbc6bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration, in seconds, over which the fade effect occurs.  <br /></td></tr>
 <tr class="memitem:a49c63e55a37e3711101180af223d4954" id="r_a49c63e55a37e3711101180af223d4954"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49c63e55a37e3711101180af223d4954">randomMillisecondCooldownBetweenSongs</a></td></tr>
+<tr class="memdesc:a49c63e55a37e3711101180af223d4954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector2 representing the range of cooldown time (in seconds) between songs.  <br /></td></tr>
 <tr class="memitem:acc76051508dd5d6bfb0e45bdc8e0dc78" id="r_acc76051508dd5d6bfb0e45bdc8e0dc78"><td class="memItemLeft" align="right" valign="top">Coroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc76051508dd5d6bfb0e45bdc8e0dc78">playingMusicCoroutine</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
@@ -234,7 +238,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Stops the <a class="el" href="#aa1877f5498b9668610fcc15140a990c5">musicSource</a> from playing music and looping until PlayMusicContinuously is called again (to start looping). </p>
+<p>Stops the <a class="el" href="#aa1877f5498b9668610fcc15140a990c5" title="Represents the audio source used for playing music tracks.">musicSource</a> from playing music and looping until PlayMusicContinuously is called again (to start looping). </p>
 
 </div>
 </div>
@@ -265,6 +269,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The duration, in seconds, over which the fade effect occurs. </p>
+
 </div>
 </div>
 <a id="aa1877f5498b9668610fcc15140a990c5" name="aa1877f5498b9668610fcc15140a990c5"></a>
@@ -278,6 +284,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Represents the audio source used for playing music tracks. </p>
 
 </div>
 </div>
@@ -321,6 +329,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>If true, music will start playing as soon as this object loads in. </p>
+
 </div>
 </div>
 <a id="a49c63e55a37e3711101180af223d4954" name="a49c63e55a37e3711101180af223d4954"></a>
@@ -334,6 +344,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Vector2 representing the range of cooldown time (in seconds) between songs. </p>
 
 </div>
 </div>
