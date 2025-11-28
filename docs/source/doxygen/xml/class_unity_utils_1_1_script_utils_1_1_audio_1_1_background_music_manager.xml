@@ -11,7 +11,7 @@
         <name>musicSource</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.musicSource</qualifiedname>
         <briefdescription>
-<para>The audio source component used to play the background music. </para>
+<para>The audio source component used to play the background Music. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -26,7 +26,7 @@
         <name>musicTracks</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.musicTracks</qualifiedname>
         <briefdescription>
-<para>An array of audio clips representing the available music tracks. </para>
+<para>An array of audio clips representing the available Music tracks. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -57,7 +57,7 @@
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.playOnAwake</qualifiedname>
         <initializer>= true</initializer>
         <briefdescription>
-<para>Whether to start playing music as soon as this object awakes. </para>
+<para>Whether to start playing Music as soon as this object awakes. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -181,7 +181,7 @@
           <declname>clip</declname>
         </param>
         <briefdescription>
-<para>Plays a music track on the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" kindref="member">musicSource</ref>. </para>
+<para>Plays a Music track on the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" kindref="member">musicSource</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -198,7 +198,7 @@
         <name>StopMusic</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.StopMusic</qualifiedname>
         <briefdescription>
-<para>Stops the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" kindref="member">musicSource</ref> from playing music and looping until PlayMusicContinuously is called again (to start looping). </para>
+<para>Stops the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" kindref="member">musicSource</ref> from playing Music and looping until PlayMusicContinuously is called again (to start looping). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -247,7 +247,7 @@
           <declname>clip</declname>
         </param>
         <briefdescription>
-<para>Plays a specific music track once. </para>
+<para>Plays a specific Music track once. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -262,7 +262,7 @@
         <name>GetRandomSong</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.GetRandomSong</qualifiedname>
         <briefdescription>
-<para><simplesect kind="return"><para>Random music track within <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a7122a46cd1682d4a54d9d944e3fcba47" kindref="member">musicTracks</ref></para>
+<para><simplesect kind="return"><para>Random Music track within <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a7122a46cd1682d4a54d9d944e3fcba47" kindref="member">musicTracks</ref></para>
 </simplesect>
 </para>
         </briefdescription>

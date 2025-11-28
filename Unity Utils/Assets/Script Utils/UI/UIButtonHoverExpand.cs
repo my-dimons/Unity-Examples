@@ -53,7 +53,6 @@ namespace UnityUtils.ScriptUtils.UI
                 EnterHoverAnimation();
 
             hoveringOverButton = true;
-            Debug.Log("Hovered over button");
         }
 
         public void OnPointerExit(PointerEventData eventData)
@@ -62,7 +61,6 @@ namespace UnityUtils.ScriptUtils.UI
                 ExitHoverAnimation();
 
             hoveringOverButton = false;
-            Debug.Log("Exited hover button");
         }
 
         /// <summary>

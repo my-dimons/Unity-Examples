@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 330572091}
   - component: {fileID: 330572090}
   - component: {fileID: 330572089}
+  - component: {fileID: 330572093}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -280,6 +281,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330572087}
   m_CullTransparentMesh: 1
+--- !u!114 &330572093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330572087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2cffe2536ed0646a1403300f4efde8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityUtils.ScriptUtils.UI.UIButtonHoverSFX
+  hoverEnterSfx: {fileID: 8300000, guid: 77167822fab8ed74a8b1719b56764d92, type: 3}
+  hoverExitSfx: {fileID: 8300000, guid: 77167822fab8ed74a8b1719b56764d92, type: 3}
+  clickSfx: {fileID: 8300000, guid: d73b6ef34fd908b4c9cce03fdd1843b6, type: 3}
+  hoverEnterVolume: 1
+  hoverExitVolume: 1
+  clickVolume: 1
+  pitchVariance: 0.2
+  volumeType: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

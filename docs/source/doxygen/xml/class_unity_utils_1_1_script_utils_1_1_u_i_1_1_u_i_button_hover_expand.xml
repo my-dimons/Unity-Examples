@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="71" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="71" bodyend="74"/>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="69" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="69" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ab36184d54a940c7f38b80b99caa9d478" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="79" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="79" bodyend="82"/>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="77" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="77" bodyend="80"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -177,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="50" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="50" bodyend="57"/>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="50" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="50" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a137b177c8790a2a8c539277d2c634dfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="59" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="59" bodyend="66"/>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="58" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="58" bodyend="64"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -244,7 +244,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="10" column="11" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="11" bodyend="83"/>
+    <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="10" column="11" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="11" bodyend="81"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a6c2afd851231b68aed8407f2134fdbec" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>EnterHoverAnimation</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ab36184d54a940c7f38b80b99caa9d478" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>ExitHoverAnimation</name></member>

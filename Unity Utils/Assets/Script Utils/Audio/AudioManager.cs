@@ -14,25 +14,25 @@ namespace UnityUtils.ScriptUtils.Audio
         public enum VolumeType
         {
             Global,
-            SFX,
+            Sfx,
             Music,
             UI,
             Custom
         }
 
-        static Dictionary<VolumeType, float> audioVolumes = new Dictionary<VolumeType, float>()
+        static readonly Dictionary<VolumeType, float> audioVolumes = new Dictionary<VolumeType, float>()
         {
             { VolumeType.Global, 1f },
-            { VolumeType.SFX,    1f },
+            { VolumeType.Sfx,    1f },
             { VolumeType.Music,  1f },
-            { VolumeType.UI,  1f },
+            { VolumeType.UI,     1f },
             { VolumeType.Custom, 1f },
         };
 
         /// <summary>
         /// Gets the current volume level for the specified audio type.
         /// </summary>
-        /// <returns>The volume level for the specified audio type, as a value between 0.0 (silent) and 1.0 (maximum volume).</returns>
+        /// <returns>The volume level for the specified audio type.</returns>
         public static float GetVolume(VolumeType volumeType)
         {
             return audioVolumes[volumeType];

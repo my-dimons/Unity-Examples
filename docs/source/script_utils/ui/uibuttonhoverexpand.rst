@@ -4,7 +4,7 @@ UIButtonHoverExpand
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.UI`
      
-The **UIButtonHoverExpand** script is used to quickly add animation to buttons
+The **UIButtonHoverExpand** script is used to quickly add animation to buttons.
 
 Usage
 -------------

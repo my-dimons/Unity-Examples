@@ -1,4 +1,6 @@
+using UnityEditor;
 using UnityEngine;
+using UnityUtils.ScriptUtils.Audio; 
 
 /*
  * To setup this script:
@@ -25,11 +27,11 @@ namespace UnityUtils.ScriptUtils.Audio
         /// Random variance to make sound feel less repetative. 
         /// randomly modifies the pitch of the Music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value).
         /// </param>
-        public static void PlaySfxAudioClip(AudioClip clip, float volume = 1, float pitchVariance = default)
+        public static void PlaySfxAudioClip(AudioClip clip, float volume = 1, float pitchVariance = default, AudioManager.VolumeType type = AudioManager.VolumeType.Sfx)
         {
             if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
 
-            CreateAndPlayAudioClip(clip, volume, pitchVariance, type: AudioManager.VolumeType.SFX);
+            CreateAndPlayAudioClip(clip, volume, pitchVariance, type: type);
         }
          
         /// <summary>
@@ -38,11 +40,11 @@ namespace UnityUtils.ScriptUtils.Audio
         /// <param name="clip"><see cref="AudioClip"/> to play</param>
         /// <param name="time">Specified time for <see cref="AudioClip"/> to play for in seconds.</param>
         /// <param name="volume">Playback volume.</param>
-        public static void PlayTimedSFXAudioClip(AudioClip clip, float time, float volume = 1)
+        public static void PlayTimedSFXAudioClip(AudioClip clip, float time, float volume = 1, AudioManager.VolumeType type = AudioManager.VolumeType.Sfx)
         {
             float clipLength = AudioManager.CalculateClipPitchWithLength(clip.length, time);
 
-            CreateAndPlayAudioClip(clip, volume, pitch: clipLength, type: AudioManager.VolumeType.SFX);
+            CreateAndPlayAudioClip(clip, volume, pitch: clipLength, type: type);
         }
 
         /// <summary>
@@ -55,11 +57,11 @@ namespace UnityUtils.ScriptUtils.Audio
         /// Random variance to make sound feel less repetative. 
         /// randomly modifies the pitch of the Music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value).
         /// </param>
-        public static void PlaySpacialSfxAudioClip(AudioClip clip, Vector3 position, float volume = 1, float pitchVariance = default)
+        public static void PlaySpacialSfxAudioClip(AudioClip clip, Vector3 position, float volume = 1, float pitchVariance = default, AudioManager.VolumeType type = AudioManager.VolumeType.Sfx)
         {
             if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
 
-            CreateAndPlayAudioClip(clip, volume, pitchVariance, position: position, type: AudioManager.VolumeType.SFX);
+            CreateAndPlayAudioClip(clip, volume, pitchVariance, position: position, type: type);
         }
 
         /// <summary>
@@ -71,16 +73,16 @@ namespace UnityUtils.ScriptUtils.Audio
         /// Random variance to make sound feel less repetative. 
         /// randomly modifies the pitch of the Music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value).
         /// </param>
-        public static void PlayClipOnSource(AudioClip clip, AudioSource source, float volume = 1, float pitchVariance = default, AudioManager.VolumeType audioType = AudioManager.VolumeType.SFX)
+        public static void PlayClipOnSource(AudioClip clip, AudioSource source, float volume = 1, float pitchVariance = default, AudioManager.VolumeType audioType = AudioManager.VolumeType.Sfx)
         {
             if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
 
             PlayAudioClipOnSource(clip, source, volume, pitchVariance, audioType);
         }
 
-        private static void CreateAndPlayAudioClip(AudioClip clip, float volume = 1, float pitchVariance = 0, float pitch = default, Vector3 position = default, Transform parent = default, AudioManager.VolumeType type = AudioManager.VolumeType.SFX)
+        private static void CreateAndPlayAudioClip(AudioClip clip, float volume = 1, float pitchVariance = 0, float pitch = default, Vector3 position = default, Transform parent = default, AudioManager.VolumeType type = AudioManager.VolumeType.Sfx)
         {
-            if (type == default) type = AudioManager.VolumeType.SFX;
+            if (type == default) type = AudioManager.VolumeType.Sfx;
 
             GameObject temporaryGameObject = new GameObject("Audio Clip (Temporary)");
             AudioSource audioSource = temporaryGameObject.AddComponent<AudioSource>();
@@ -111,7 +113,7 @@ namespace UnityUtils.ScriptUtils.Audio
             Object.Destroy(temporaryGameObject, destroyTime);
         }
 
-        private static void PlayAudioClipOnSource(AudioClip audioClip, AudioSource audioSource, float volume, float pitchVariance = default, AudioManager.VolumeType audioType = AudioManager.VolumeType.SFX, float pitch = default)
+        private static void PlayAudioClipOnSource(AudioClip audioClip, AudioSource audioSource, float volume, float pitchVariance = default, AudioManager.VolumeType audioType = AudioManager.VolumeType.Sfx, float pitch = default)
         {
             audioSource.clip = audioClip;
             audioSource.volume = AudioManager.CalculateVolumeBasedOnType(volume, audioType);

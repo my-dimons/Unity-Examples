@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['onpointerenter_0',['OnPointerEnter',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a87f3aa32d0069c9e275ac82e5804fb9d',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverExpand']]],
-  ['onpointerexit_1',['OnPointerExit',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a137b177c8790a2a8c539277d2c634dfb',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverExpand']]]
+  ['onpointerclick_0',['OnPointerClick',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a4097c5e00c6d00f209b2718449c3710d',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
+  ['onpointerenter_1',['OnPointerEnter',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a87f3aa32d0069c9e275ac82e5804fb9d',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerEnter()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a098921ae8917b2ab59d8e2449319c486',1,'UnityUtils.ScriptUtils.UI.UIButtonSFX.OnPointerEnter()']]],
+  ['onpointerexit_2',['OnPointerExit',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a137b177c8790a2a8c539277d2c634dfb',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerExit()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#aba00af17f744dac7f08360605fb2d914',1,'UnityUtils.ScriptUtils.UI.UIButtonSFX.OnPointerExit()']]]
 ];

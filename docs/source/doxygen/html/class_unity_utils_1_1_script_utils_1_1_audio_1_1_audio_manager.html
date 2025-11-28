@@ -92,15 +92,19 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio
 </div><!--header-->
 <div class="contents">
 
-<p>Holds variables/functions for other audio scripts (Such as global volume).  
+<p>Holds variables/functions for other audio scripts (Such as Global volume).  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0a7bc22fea904cdde6b310b8beb97b41" id="r_a0a7bc22fea904cdde6b310b8beb97b41"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> { <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48">sfx</a>
-, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0">music</a>
-, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765">global</a>
-, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127">custom</a>
+<tr class="memitem:a0a7bc22fea904cdde6b310b8beb97b41" id="r_a0a7bc22fea904cdde6b310b8beb97b41"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> { <br />
+&#160;&#160;<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8">Global</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3">Sfx</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217">Music</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b">UI</a>
+, <br />
+&#160;&#160;<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af">Custom</a>
+<br />
  }</td></tr>
 <tr class="memdesc:a0a7bc22fea904cdde6b310b8beb97b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds different audio types for volume calculations.  <a href="#a0a7bc22fea904cdde6b310b8beb97b41">More...</a><br /></td></tr>
 </table><table class="memberdecls">
@@ -113,7 +117,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a096134c5684b1ef0d8f46d9c0cf9a6a6" id="r_a096134c5684b1ef0d8f46d9c0cf9a6a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a096134c5684b1ef0d8f46d9c0cf9a6a6">SetVolume</a> (<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType, float volume)</td></tr>
 <tr class="memdesc:a096134c5684b1ef0d8f46d9c0cf9a6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the volume level for the specified audio type to the new volume. Clamps to a range between 0-1 inclusive.  <br /></td></tr>
 <tr class="memitem:a6842171f65007a880eac46610f5676b5" id="r_a6842171f65007a880eac46610f5676b5"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6842171f65007a880eac46610f5676b5">CalculateVolumeBasedOnType</a> (float volume, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType)</td></tr>
-<tr class="memdesc:a6842171f65007a880eac46610f5676b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does multiplication to volume types to the get right audio levels.  <br /></td></tr>
+<tr class="memdesc:a6842171f65007a880eac46610f5676b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the final volume after applying both the type volume and (unless the type is Global) the global volume.  <br /></td></tr>
+<tr class="memitem:a0b0a5e413f1f381a80658aaae7256203" id="r_a0b0a5e413f1f381a80658aaae7256203"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b0a5e413f1f381a80658aaae7256203">MultiplyByGlobalVolume</a> (float volume)</td></tr>
+<tr class="memdesc:a0b0a5e413f1f381a80658aaae7256203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the specified volume by the current global volume level.  <br /></td></tr>
 <tr class="memitem:a0498ca8ec7582e9aa3607f534a7dc5f0" id="r_a0498ca8ec7582e9aa3607f534a7dc5f0"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0498ca8ec7582e9aa3607f534a7dc5f0">CalculateClipLength</a> (float clipLength, float pitch)</td></tr>
 <tr class="memdesc:a0498ca8ec7582e9aa3607f534a7dc5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the effective playback duration of an audio clip after adjusting for pitch.  <br /></td></tr>
 <tr class="memitem:a41eadf3c8d28dae43bd9058ff3ecf4ae" id="r_a41eadf3c8d28dae43bd9058ff3ecf4ae"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41eadf3c8d28dae43bd9058ff3ecf4ae">CalculateClipPitchWithLength</a> (float clipLength, float time)</td></tr>
@@ -122,7 +128,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3f7535559b788c3fdd18b161f7310774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the pitch variance to add randomness to playback.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Holds variables/functions for other audio scripts (Such as global volume). </p>
+<div class="textblock"><p>Holds variables/functions for other audio scripts (Such as Global volume). </p>
 </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
 <a id="a0a7bc22fea904cdde6b310b8beb97b41" name="a0a7bc22fea904cdde6b310b8beb97b41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a7bc22fea904cdde6b310b8beb97b41">&#9670;&#160;</a></span>VolumeType</h2>
@@ -138,10 +144,11 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Holds different audio types for volume calculations. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48" name="a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48"></a>sfx&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0" name="a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0"></a>music&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765" name="a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765"></a>global&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127" name="a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127"></a>custom&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" name="a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8"></a>Global&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" name="a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3"></a>Sfx&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" name="a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217"></a>Music&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b" name="a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b"></a>UI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af" name="a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af"></a>Custom&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -261,12 +268,12 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Does multiplication to volume types to the get right audio levels. </p>
+<p>Returns the final volume after applying both the type volume and (unless the type is Global) the global volume. </p>
 <dl class="section return"><dt>Returns</dt><dd>Proper volume level based on audio type. </dd></dl>
 
 </div>
@@ -295,7 +302,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the current volume level for the specified audio type. </p>
-<dl class="section return"><dt>Returns</dt><dd>The volume level for the specified audio type, as a value between 0.0 (silent) and 1.0 (maximum volume).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The volume level for the specified audio type.</dd></dl>
 
 </div>
 </div>
@@ -327,6 +334,33 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adjusts the volume for the specified audio type by adding the given value to its current volume. </p>
+
+</div>
+</div>
+<a id="a0b0a5e413f1f381a80658aaae7256203" name="a0b0a5e413f1f381a80658aaae7256203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b0a5e413f1f381a80658aaae7256203">&#9670;&#160;</a></span>MultiplyByGlobalVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float UnityUtils.ScriptUtils.Audio.AudioManager.MultiplyByGlobalVolume </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplies the specified volume by the current global volume level. </p>
 
 </div>
 </div>

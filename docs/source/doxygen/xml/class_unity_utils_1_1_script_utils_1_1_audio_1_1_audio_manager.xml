@@ -7,29 +7,36 @@
         <type></type>
         <name>VolumeType</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.AudioManager.VolumeType</qualifiedname>
-        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48" prot="public">
-          <name>sfx</name>
+        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" prot="public">
+          <name>Global</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0" prot="public">
-          <name>music</name>
+        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" prot="public">
+          <name>Sfx</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765" prot="public">
-          <name>global</name>
+        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" prot="public">
+          <name>Music</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127" prot="public">
-          <name>custom</name>
+        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b" prot="public">
+          <name>UI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af" prot="public">
+          <name>Custom</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -42,22 +49,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="14" column="15" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="15" bodyend="20"/>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="14" column="15" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="15" bodyend="21"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8e14a2e931430793b59f2adab937cca2" prot="private" static="yes" mutable="no">
-        <type>Dictionary&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">VolumeType</ref>, float &gt;</type>
-        <definition>Dictionary&lt;VolumeType, float&gt; UnityUtils.ScriptUtils.Audio.AudioManager.audioVolumes</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a97ad4c4a1cf0f888a121cfe61d1d895a" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">VolumeType</ref>, float &gt;</type>
+        <definition>readonly Dictionary&lt;VolumeType, float&gt; UnityUtils.ScriptUtils.Audio.AudioManager.audioVolumes</definition>
         <argsstring></argsstring>
         <name>audioVolumes</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.AudioManager.audioVolumes</qualifiedname>
         <initializer>= new Dictionary&lt;<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">VolumeType</ref>, float&gt;()
         {
-            { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48" kindref="member">VolumeType.sfx</ref>,    1f },
-            { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0" kindref="member">VolumeType.music</ref>,  1f },
-            { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765" kindref="member">VolumeType.global</ref>, 1f },
-            { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127" kindref="member">VolumeType.custom</ref>, 1f },
+            { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" kindref="member">VolumeType.Global</ref>, 1f },
+            { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" kindref="member">VolumeType.Sfx</ref>,    1f },
+            { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" kindref="member">VolumeType.Music</ref>,  1f },
+            { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b" kindref="member">VolumeType.UI</ref>,     1f },
+            { <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af" kindref="member">VolumeType.Custom</ref>, 1f },
         }</initializer>
         <briefdescription>
         </briefdescription>
@@ -65,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="22" column="27" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="22" bodyend="28"/>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="23" column="36" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="23" bodyend="30"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -83,13 +91,13 @@
 <para>Gets the current volume level for the specified audio type. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>The volume level for the specified audio type, as a value between 0.0 (silent) and 1.0 (maximum volume).</para>
+<para><simplesect kind="return"><para>The volume level for the specified audio type.</para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="34" column="29" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="34" bodyend="37"/>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="36" column="29" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="36" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a938dc9ab15c02a784ecb8921812f88f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -112,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="42" column="28" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="42" bodyend="45"/>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="44" column="28" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="44" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a096134c5684b1ef0d8f46d9c0cf9a6a6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -135,9 +143,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="50" column="28" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="50" bodyend="53"/>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="52" column="28" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="52" bodyend="55"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a6842171f65007a880eac46610f5676b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a6842171f65007a880eac46610f5676b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
         <definition>static float UnityUtils.ScriptUtils.Audio.AudioManager.CalculateVolumeBasedOnType</definition>
         <argsstring>(float volume, VolumeType volumeType)</argsstring>
@@ -152,7 +160,7 @@
           <declname>volumeType</declname>
         </param>
         <briefdescription>
-<para>Does multiplication to volume types to the get right audio levels. </para>
+<para>Returns the final volume after applying both the type volume and (unless the type is Global) the global volume. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="return"><para>Proper volume level based on audio type. </para>
@@ -161,7 +169,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="61" column="29"/>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="64" column="29" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="64" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0b0a5e413f1f381a80658aaae7256203" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float UnityUtils.ScriptUtils.Audio.AudioManager.MultiplyByGlobalVolume</definition>
+        <argsstring>(float volume)</argsstring>
+        <name>MultiplyByGlobalVolume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.AudioManager.MultiplyByGlobalVolume</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies the specified volume by the current global volume level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="77" column="29"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0498ca8ec7582e9aa3607f534a7dc5f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -187,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="76" column="29"/>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="83" column="29"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a41eadf3c8d28dae43bd9058ff3ecf4ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -213,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="82" column="29"/>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="89" column="29"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3f7535559b788c3fdd18b161f7310774" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -235,44 +262,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="88" column="29"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-static-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0b0a5e413f1f381a80658aaae7256203" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>float</type>
-        <definition>static float UnityUtils.ScriptUtils.Audio.AudioManager.MultiplyByGlobalVolume</definition>
-        <argsstring>(float volume)</argsstring>
-        <name>MultiplyByGlobalVolume</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Audio.AudioManager.MultiplyByGlobalVolume</qualifiedname>
-        <param>
-          <type>float</type>
-          <declname>volume</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="70" column="30"/>
+        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="95" column="29"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Holds variables/functions for other audio scripts (Such as global volume). </para>
+<para>Holds variables/functions for other audio scripts (Such as Global volume). </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Assets/Script Utils/Audio/AudioManager.cs" line="11" column="19" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="12" bodyend="89"/>
+    <location file="Assets/Script Utils/Audio/AudioManager.cs" line="11" column="19" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="12" bodyend="96"/>
     <listofallmembers>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8e14a2e931430793b59f2adab937cca2" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>audioVolumes</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a97ad4c4a1cf0f888a121cfe61d1d895a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>audioVolumes</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0498ca8ec7582e9aa3607f534a7dc5f0" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>CalculateClipLength</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a41eadf3c8d28dae43bd9058ff3ecf4ae" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>CalculateClipPitchWithLength</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3f7535559b788c3fdd18b161f7310774" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>CalculatePitchVariance</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a6842171f65007a880eac46610f5676b5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>CalculateVolumeBasedOnType</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a36656b98992ea5778e3ca6f2b1316516" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>GetVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a938dc9ab15c02a784ecb8921812f88f4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>ModifyVolume</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0b0a5e413f1f381a80658aaae7256203" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>MultiplyByGlobalVolume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0b0a5e413f1f381a80658aaae7256203" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>MultiplyByGlobalVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a096134c5684b1ef0d8f46d9c0cf9a6a6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>SetVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>VolumeType</name></member>
     </listofallmembers>
