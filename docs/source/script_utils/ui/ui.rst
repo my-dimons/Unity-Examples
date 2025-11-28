@@ -12,4 +12,5 @@ Scripts
 .. toctree::
    :maxdepth: 1
    
-   
+   uiutilsmanager
+   uibuttonhoverexpand

@@ -1,6 +1,7 @@
 using UnityEngine;
 
-namespace UnityUtils.ScriptUtils.Particles {
+namespace UnityUtils.ScriptUtils.Particles 
+{
     public static class ParticleManager
     {
         /// <summary>

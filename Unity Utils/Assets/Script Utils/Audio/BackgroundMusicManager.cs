@@ -13,7 +13,8 @@ using System.Collections;
  *
  */
 
-namespace UnityUtils.ScriptUtils.Audio {
+namespace UnityUtils.ScriptUtils.Audio 
+{
     public class BackgroundMusicManager : MonoBehaviour
     {
         /// The audio source component used to play the background music.

@@ -1,6 +1,7 @@
 using UnityEngine;
 
-namespace UnityUtils.ScriptUtils.ScriptableObjects {
+namespace UnityUtils.ScriptUtils.ScriptableObjects 
+{
     public static class ScriptableObjectManager
     {
         /// <summary>

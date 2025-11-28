@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerEnterHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerExitHandler</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a99f701861368f017f25c429f58fbfa0f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.hoverSize</definition>
+        <argsstring></argsstring>
+        <name>hoverSize</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.hoverSize</qualifiedname>
+        <initializer>= 1.3f</initializer>
+        <briefdescription>
+<para>When hovered this is the size the button will be set to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="14" column="22" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a88c3046734a3645154c58778039f6c65" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.sizeAnimationSeconds</definition>
+        <argsstring></argsstring>
+        <name>sizeAnimationSeconds</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.sizeAnimationSeconds</qualifiedname>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+<para>The amount of seconds that the button will size up or down in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="17" column="22" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a93de5dda2256a7f3a9282d78120183b4" prot="public" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.SizingCurve</definition>
+        <argsstring></argsstring>
+        <name>SizingCurve</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.SizingCurve</qualifiedname>
+        <initializer>= AnimationCurve.EaseInOut(0, 0, 1, 1)</initializer>
+        <briefdescription>
+<para>The AnimationCurve that the button will follow. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="22" column="31" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a3342c4a93c9ff16cb38f8b1c978a0853" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.hoveringOverButton</definition>
+        <argsstring></argsstring>
+        <name>hoveringOverButton</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.hoveringOverButton</qualifiedname>
+        <briefdescription>
+<para>True if the button is being hovered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="27" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1abd41aa46bb92276a2d8987981a63aed0" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.originalSize</definition>
+        <argsstring></argsstring>
+        <name>originalSize</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.originalSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="30" column="17" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a367ab9ab5b7515e10559ef0d368f2b36" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.hoverSizeVector</definition>
+        <argsstring></argsstring>
+        <name>hoverSizeVector</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.hoverSizeVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="31" column="17" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a4f70142ba8cb8c9c3cd2ba446008387b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="34" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a658c903803b0b5101ed3b8b35b8245c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="40" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="40" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a6c2afd851231b68aed8407f2134fdbec" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.EnterHoverAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>EnterHoverAnimation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.EnterHoverAnimation</qualifiedname>
+        <briefdescription>
+<para>Grows the button to the original size (hoverSizeVector). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="71" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ab36184d54a940c7f38b80b99caa9d478" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.ExitHoverAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>ExitHoverAnimation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.ExitHoverAnimation</qualifiedname>
+        <briefdescription>
+<para>Shrinks the button to its original size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="79" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="79" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a87f3aa32d0069c9e275ac82e5804fb9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerEnter</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerEnter</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerEnter</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="50" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="50" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a137b177c8790a2a8c539277d2c634dfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerExit</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerExit</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerExit</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="59" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="59" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Script Utils/UI/UIButtonHoverExpand.cs" line="10" column="11" bodyfile="Assets/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="11" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a6c2afd851231b68aed8407f2134fdbec" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>EnterHoverAnimation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ab36184d54a940c7f38b80b99caa9d478" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>ExitHoverAnimation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a3342c4a93c9ff16cb38f8b1c978a0853" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>hoveringOverButton</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a99f701861368f017f25c429f58fbfa0f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>hoverSize</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a367ab9ab5b7515e10559ef0d368f2b36" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>hoverSizeVector</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a87f3aa32d0069c9e275ac82e5804fb9d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>OnPointerEnter</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a137b177c8790a2a8c539277d2c634dfb" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>OnPointerExit</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1abd41aa46bb92276a2d8987981a63aed0" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>originalSize</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a88c3046734a3645154c58778039f6c65" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>sizeAnimationSeconds</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a93de5dda2256a7f3a9282d78120183b4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>SizingCurve</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a4f70142ba8cb8c9c3cd2ba446008387b" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>Start</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a658c903803b0b5101ed3b8b35b8245c0" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::UI::UIUtilsManager</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager_1a4395e3954ec15f25e32d0da6a67c5499" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>static IEnumerator UnityUtils.ScriptUtils.UI.UIUtilsManager.AnimateButtonSize</definition>
+        <argsstring>(GameObject obj, Vector3 originalSize, Vector3 newSize, AnimationCurve SizingCurve, float speed)</argsstring>
+        <name>AnimateButtonSize</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIUtilsManager.AnimateButtonSize</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>originalSize</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>SizingCurve</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+<para>Animates the scale of a button from its original size to a new size over time using a specified animation curve. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If you want to use seconds for sizeAnimationSeconds, calculate the seconds using the CalculateAnimationSpeed(float, float) function</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIUtilsManager.cs" line="16" column="35" bodyfile="Assets/Script Utils/UI/UIUtilsManager.cs" bodystart="16" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager_1a505f82896fc0863ed46d7562cfec1ff7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float UnityUtils.ScriptUtils.UI.UIUtilsManager.CalculateAnimationSpeed</definition>
+        <argsstring>(float time)</argsstring>
+        <name>CalculateAnimationSpeed</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIUtilsManager.CalculateAnimationSpeed</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the animation sizeAnimationSeconds for the <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager_1a4395e3954ec15f25e32d0da6a67c5499" kindref="member">AnimateButtonSize(GameObject, Vector3, Vector3, AnimationCurve, float)</ref> function if you want to use seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration, in seconds, over which the animation occurs</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The calculated animation sizeAnimationSeconds, expressed as distance per second.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIUtilsManager.cs" line="35" column="29" bodyfile="Assets/Script Utils/UI/UIUtilsManager.cs" bodystart="35" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Script Utils/UI/UIUtilsManager.cs" line="9" column="19" bodyfile="Assets/Script Utils/UI/UIUtilsManager.cs" bodystart="10" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager_1a4395e3954ec15f25e32d0da6a67c5499" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIUtilsManager</scope><name>AnimateButtonSize</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager_1a505f82896fc0863ed46d7562cfec1ff7" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIUtilsManager</scope><name>CalculateAnimationSpeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

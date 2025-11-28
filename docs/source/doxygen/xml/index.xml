@@ -66,13 +66,37 @@
     <member refid="class_testing_script_1a697d3231e3fcc1426dc3da87416f0711" kind="function"><name>TestCoroutine</name></member>
     <member refid="class_testing_script_1acb711b373799913aec61b781aa4adfdb" kind="function"><name>Test</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a99f701861368f017f25c429f58fbfa0f" kind="variable"><name>hoverSize</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a88c3046734a3645154c58778039f6c65" kind="variable"><name>sizeAnimationSeconds</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a93de5dda2256a7f3a9282d78120183b4" kind="variable"><name>SizingCurve</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a3342c4a93c9ff16cb38f8b1c978a0853" kind="variable"><name>hoveringOverButton</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1abd41aa46bb92276a2d8987981a63aed0" kind="variable"><name>originalSize</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a367ab9ab5b7515e10559ef0d368f2b36" kind="variable"><name>hoverSizeVector</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a4f70142ba8cb8c9c3cd2ba446008387b" kind="function"><name>Start</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a658c903803b0b5101ed3b8b35b8245c0" kind="function"><name>Update</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a6c2afd851231b68aed8407f2134fdbec" kind="function"><name>EnterHoverAnimation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ab36184d54a940c7f38b80b99caa9d478" kind="function"><name>ExitHoverAnimation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a87f3aa32d0069c9e275ac82e5804fb9d" kind="function"><name>OnPointerEnter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a137b177c8790a2a8c539277d2c634dfb" kind="function"><name>OnPointerExit</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager" kind="class"><name>UnityUtils::ScriptUtils::UI::UIUtilsManager</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager_1a4395e3954ec15f25e32d0da6a67c5499" kind="function"><name>AnimateButtonSize</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager_1a505f82896fc0863ed46d7562cfec1ff7" kind="function"><name>CalculateAnimationSpeed</name></member>
+  </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
   </compound>
   <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
   </compound>
   <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
   </compound>
+  <compound refid="namespace_unity_1_1_visual_scripting" kind="namespace"><name>Unity::VisualScripting</name>
+  </compound>
   <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_event_systems" kind="namespace"><name>UnityEngine::EventSystems</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
   </compound>
   <compound refid="namespace_unity_engine_1_1_windows_1_1_speech" kind="namespace"><name>UnityEngine::Windows::Speech</name>
   </compound>
@@ -86,6 +110,8 @@
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects" kind="namespace"><name>UnityUtils::ScriptUtils::ScriptableObjects</name>
   </compound>
+  <compound refid="namespace_unity_utils_1_1_script_utils_1_1_u_i" kind="namespace"><name>UnityUtils::ScriptUtils::UI</name>
+  </compound>
   <compound refid="_singleton_example_8cs" kind="file"><name>SingletonExample.cs</name>
   </compound>
   <compound refid="_audio_manager_8cs" kind="file"><name>AudioManager.cs</name>
@@ -97,6 +123,10 @@
   <compound refid="_particle_manager_8cs" kind="file"><name>ParticleManager.cs</name>
   </compound>
   <compound refid="_scriptable_object_manager_8cs" kind="file"><name>ScriptableObjectManager.cs</name>
+  </compound>
+  <compound refid="_u_i_button_hover_expand_8cs" kind="file"><name>UIButtonHoverExpand.cs</name>
+  </compound>
+  <compound refid="_u_i_utils_manager_8cs" kind="file"><name>UIUtilsManager.cs</name>
   </compound>
   <compound refid="_testing_script_8cs" kind="file"><name>TestingScript.cs</name>
   </compound>
@@ -111,5 +141,7 @@
   <compound refid="dir_4c0bcb34cf396b337f3d616f488cbca9" kind="dir"><name>Assets/Script Utils</name>
   </compound>
   <compound refid="dir_9f2b6e6d1de89151db6681cf7ae9d1b8" kind="dir"><name>Assets/Script Utils/Scriptable Objects</name>
+  </compound>
+  <compound refid="dir_13bff5dd63580ebd994eec581358b383" kind="dir"><name>Assets/Script Utils/UI</name>
   </compound>
 </doxygenindex>

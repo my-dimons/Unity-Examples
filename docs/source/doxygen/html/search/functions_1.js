@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['getparticlesystem_0',['GetParticleSystem',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html#a6fd1f7c5645bba7f225c6da90295242a',1,'UnityUtils::ScriptUtils::Particles::ParticleManager']]],
-  ['getrandomsong_1',['GetRandomSong',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#ad8f3998dc0ca327279da6d78c3ff951c',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
-  ['getscriptableobjects_3c_20t_20_3e_2',['GetScriptableObjects&lt; T &gt;',['../class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html#ad376e448c4e3b09d4545ac4ccd881653',1,'UnityUtils::ScriptUtils::ScriptableObjects::ScriptableObjectManager']]],
-  ['getvolume_3',['GetVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a36656b98992ea5778e3ca6f2b1316516',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
+  ['calculateanimationspeed_0',['CalculateAnimationSpeed',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager.html#a505f82896fc0863ed46d7562cfec1ff7',1,'UnityUtils::ScriptUtils::UI::UIUtilsManager']]],
+  ['calculatecliplength_1',['CalculateClipLength',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0498ca8ec7582e9aa3607f534a7dc5f0',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['calculateclippitchwithlength_2',['CalculateClipPitchWithLength',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a41eadf3c8d28dae43bd9058ff3ecf4ae',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['calculatepitchvariance_3',['CalculatePitchVariance',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a3f7535559b788c3fdd18b161f7310774',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['calculatevolumebasedontype_4',['CalculateVolumeBasedOnType',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a6842171f65007a880eac46610f5676b5',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
 ];

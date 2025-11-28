@@ -10,7 +10,8 @@ using UnityEngine;
  *  To play audio on a set audio audioSource (such as a character or object), use "PlayClipOnSource()"
  */
 
-namespace UnityUtils.ScriptUtils.Audio {
+namespace UnityUtils.ScriptUtils.Audio 
+{
     public static class SfxManager 
     {
         private const float DEFAULT_PITCH_VARIANCE = 0.1f;
