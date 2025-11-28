@@ -5,9 +5,9 @@ using System.Collections;
  *
  * This script should be created in the main scene, and it will persist through all scenes
  * 
- * This script is designed to keep a set of predefined music tracks playing randomly in the background. 
- * It does not support dynamic soundtracks, such as changing music based on the player's location or game events.
- * But this script does have a few functions to stop and start music
+ * This script is designed to keep a set of predefined Music tracks playing randomly in the background. 
+ * It does not support dynamic soundtracks, such as changing Music based on the player's location or game events.
+ * But this script does have a few functions to stop and start Music
  * 
  * Sometimes this script will bug out if you don't have run in background enabled in Unity (https://discussions.unity.com/t/how-do-you-keep-your-game-running-even-when-you-switch-out-of-it/928)
  *
@@ -17,10 +17,10 @@ namespace UnityUtils.ScriptUtils.Audio
 {
     public class BackgroundMusicManager : MonoBehaviour
     {
-        /// The audio source component used to play the background music.
+        /// The audio source component used to play the background Music.
         public AudioSource musicSource;
 
-        /// An array of audio clips representing the available music tracks.
+        /// An array of audio clips representing the available Music tracks.
         public AudioClip[] musicTracks;
         [Space(4)]
 
@@ -28,7 +28,7 @@ namespace UnityUtils.ScriptUtils.Audio
         public AudioClip currentPlayingTrack;
         [Space(8)]
 
-        /// Whether to start playing music as soon as this object awakes
+        /// Whether to start playing Music as soon as this object awakes
         public bool playOnAwake = true;
 
         /// The duration, in seconds, over which the fade in/out effect occurs.
@@ -55,7 +55,7 @@ namespace UnityUtils.ScriptUtils.Audio
         private void Update()
         {
             if (musicSource != null)
-                musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.VolumeType.music);
+                musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.VolumeType.Music);
         }
 
         /// <summary>
@@ -79,7 +79,7 @@ namespace UnityUtils.ScriptUtils.Audio
         }
 
         /// <summary>
-        /// Stops the <see cref="musicSource"/> from playing music and looping until <see cref="PlayMusicContinuously"/> is called again (to start looping)
+        /// Stops the <see cref="musicSource"/> from playing Music and looping until <see cref="PlayMusicContinuously"/> is called again (to start looping)
         /// </summary>
         public void StopMusic()
         {
@@ -110,7 +110,7 @@ namespace UnityUtils.ScriptUtils.Audio
         }
 
         /// <summary>
-        /// Plays a music track on the <see cref="musicSource"/>
+        /// Plays a Music track on the <see cref="musicSource"/>
         /// </summary>
         private void PlayMusicTrack(AudioClip clip)
         {
@@ -131,14 +131,14 @@ namespace UnityUtils.ScriptUtils.Audio
         }
 
         /// <summary>
-        /// Plays a specific music track once
+        /// Plays a specific Music track once
         /// </summary>
         public void PlaySpecificMusicTrack(AudioClip clip)
         {
             Instance.PlayMusicTrack(clip);
         }
 
-        /// <returns>Random music track within <see cref="musicTracks"/></returns>
+        /// <returns>Random Music track within <see cref="musicTracks"/></returns>
         public AudioClip GetRandomSong()
         {
             int randomSongTrackIndex = Random.Range(0, musicTracks.Length);
