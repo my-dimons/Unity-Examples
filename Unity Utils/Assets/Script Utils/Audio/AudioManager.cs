@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Windows.Speech;
 
-namespace UnityUtils.ScriptUtils.Audio 
+namespace UnityUtils.ScriptUtils.Audio
 {
     /// <summary>
     /// Holds variables/functions for other audio scripts (Such as Global volume)

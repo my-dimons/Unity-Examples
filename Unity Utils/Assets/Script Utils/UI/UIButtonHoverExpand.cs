@@ -16,6 +16,8 @@ namespace UnityUtils.ScriptUtils.UI
         /// The amount of seconds that the button will size up or down in.
         public float sizeAnimationSeconds = 0.2f;
 
+        /// true to use unscaled real time for the animation (ignoring time scale)
+        public bool useRealtime;
         [Space(8)]
 
         /// The <see cref="AnimationCurve"/> that the button will follow.
@@ -25,7 +27,6 @@ namespace UnityUtils.ScriptUtils.UI
 
         /// True if the button is being hovered
         public bool hoveringOverButton;
-
 
         Vector3 originalSize;
         Vector3 hoverSizeVector;
@@ -68,6 +69,7 @@ namespace UnityUtils.ScriptUtils.UI
         /// </summary>
         void EnterHoverAnimation()
         {
+            //ObjectAnimations.AnimateTransformScale(transform, originalSize, hoverSizeVector, UIUtilsManager.CalculateAnimationSpeed(sizeAnimationSeconds), SizingCurve);
             StartCoroutine(UIUtilsManager.AnimateButtonSize(this.gameObject, originalSize, hoverSizeVector, SizingCurve, UIUtilsManager.CalculateAnimationSpeed(sizeAnimationSeconds)));
         }
 

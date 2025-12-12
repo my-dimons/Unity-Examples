@@ -1,6 +1,4 @@
-using UnityEditor;
 using UnityEngine;
-using UnityUtils.ScriptUtils.Audio; 
 
 /*
  * To setup this script:
@@ -12,9 +10,9 @@ using UnityUtils.ScriptUtils.Audio;
  *  To play audio on a set audio audioSource (such as a character or object), use "PlayClipOnSource()"
  */
 
-namespace UnityUtils.ScriptUtils.Audio 
+namespace UnityUtils.ScriptUtils.Audio
 {
-    public static class SfxManager 
+    public static class SfxManager
     {
         private const float DEFAULT_PITCH_VARIANCE = 0.1f;
 
@@ -33,7 +31,7 @@ namespace UnityUtils.ScriptUtils.Audio
 
             CreateAndPlayAudioClip(clip, volume, pitchVariance, type: type);
         }
-         
+
         /// <summary>
         /// Plays an <see cref="AudioClip"/> globally (non-spacialy) at a certain volume for a set amount of time.
         /// </summary>
