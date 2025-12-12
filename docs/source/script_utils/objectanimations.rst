@@ -5,6 +5,7 @@ ObjectAnimations
    `UnityUtils.ScriptUtils`
      
 The **ObjectAnimations** script is used to help with animating object values, things like position, script values, etc.
+Be careful when using this because overlapping animations going on of the same value can be an issue
 
 Example Usage
 -------------

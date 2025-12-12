@@ -1,8 +1,7 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UnityUtils.ScriptUtils
 {
@@ -29,45 +28,33 @@ namespace UnityUtils.ScriptUtils
         #endregion
 
         /// <summary>
-        /// Animates an objects Transform components scale from a starting value to an ending value over a specified duration.
+        /// Animates an objects <see cref="Transform"/> components scale from a starting value to an ending value over a specified duration.
         /// </summary>
         public static void AnimateTransformScale(Transform transform, Vector3 startScale, Vector3 endScale, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
             if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
-            AnimateVector3Value(startScale, endScale, duration, 
-                value => transform.localScale = value, 
+            AnimateVector3Value(startScale, endScale, duration,
+                value => transform.localScale = value,
                 useRealtime, animationCurve);
         }
 
         /// <summary>
-        /// Animates an objects Transform components position from a starting value to an ending value over a specified duration.
+        /// Animates an objects <see cref="Transform"/> components position from a starting value to an ending value over a specified duration.
         /// </summary>
         public static void AnimateTransformPosition(Transform transform, Vector3 startPos, Vector3 endPos, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
             if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
-            AnimateVector3Value(startPos, endPos, duration, 
-                value => transform.position = value, 
+            AnimateVector3Value(startPos, endPos, duration,
+                value => transform.position = value,
                 useRealtime, animationCurve);
         }
 
         /// <summary>
-        /// Animates an objects Transform components rotation from a starting value to an ending value over a specified duration.
+        /// Animates an objects <see cref="Transform"/> components rotation from a starting value to an ending value over a specified duration.
         /// </summary>
         public static void AnimateTransformRotation(Transform transform, Vector3 startRotation, Vector3 endRotation, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
-        {
-            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
-
-            AnimateVector3Value(startRotation, endRotation, duration, 
-                value => transform.localRotation = Quaternion.Euler(value), 
-                useRealtime, animationCurve);
-        }
-
-        /// <summary>
-        /// Animates an objects RectTransform component position from a starting value to an ending value over a specified duration.
-        /// </summary>
-        public static void AnimateRectTransformPosition(Transform transform, Vector3 startRotation, Vector3 endRotation, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
             if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
@@ -77,7 +64,35 @@ namespace UnityUtils.ScriptUtils
         }
 
         /// <summary>
-        /// Animates a Vector3 value from a starting value to an ending value over a specified duration.
+        /// Animates an objects <see cref="SpriteRenderer"/> component alpha from a starting value to an ending value over a specified duration.
+        /// </summary>
+        public static void AnimateSpriteRendererOpacity(SpriteRenderer spriteRenderer, float startOpacity, float endOpacity, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
+        {
+            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+
+            Color color = spriteRenderer.color;
+
+            AnimateValue(startOpacity, endOpacity, duration,
+                value => spriteRenderer.color = new Color(color.r, color.g, color.b, value),
+                useRealtime, animationCurve);
+        }
+
+        /// <summary>
+        /// Animates an objects <see cref="Image"/> component alpha from a starting value to an ending value over a specified duration.
+        /// </summary>
+        public static void AnimateImageOpacity(Image image, float startOpacity, float endOpacity, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
+        {
+            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+
+            Color color = image.color;
+
+            AnimateValue(startOpacity, endOpacity, duration,
+                value => image.color = new Color(color.r, color.g, color.b, value),
+                useRealtime, animationCurve);
+        }
+
+        /// <summary>
+        /// Animates a <see cref="Vector3"/> value from a starting value to an ending value over a specified duration.
         /// </summary>
         /// <param name="onValueChanged">A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</param>
         /// <param name="useRealtime">true to use unscaled real time for the animation (ignoring time scale).</param>
