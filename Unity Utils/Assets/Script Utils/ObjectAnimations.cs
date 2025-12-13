@@ -85,6 +85,7 @@ namespace UnityUtils.ScriptUtils
         /// <summary>
         /// Animates a value from a starting value to an ending value over a specified duration
         /// </summary>
+        /// <param name="lerpFunction">Decides how the start and end are lerped. Use things like Mathf.Lerp() or Vector3.Lerp() for different types of values</param>
         /// <param name="onValueChanged">A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</param>
         /// <param name="useRealtime">true to use unscaled real time for the animation (ignoring time scale)</param>
         /// <param name="animationCurve">Default is a linear curve</param>

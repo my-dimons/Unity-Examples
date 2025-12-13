@@ -418,6 +418,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Animates a value from a starting value to an ending value over a specified duration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">lerpFunction</td><td>Decides how the start and end are lerped. Use things like Mathf.Lerp() or Vector3.Lerp() for different types of values</td></tr>
     <tr><td class="paramname">onValueChanged</td><td>A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</td></tr>
     <tr><td class="paramname">useRealtime</td><td>true to use unscaled real time for the animation (ignoring time scale)</td></tr>
     <tr><td class="paramname">animationCurve</td><td>Default is a linear curve</td></tr>
