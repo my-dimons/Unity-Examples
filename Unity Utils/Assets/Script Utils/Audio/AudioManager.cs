@@ -1,35 +1,37 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Windows.Speech;
 
-namespace UnityUtils.ScriptUtils.Audio {
+namespace UnityUtils.ScriptUtils.Audio
+{
     /// <summary>
-    /// Holds variables/functions for other audio scripts (Such as global volume)
+    /// Holds variables/functions for other audio scripts (Such as Global volume)
     /// </summary>
     public static class AudioManager
     {
         /// Holds different audio types for volume calculations
         public enum VolumeType
         {
-            sfx,
-            music,
-            global,
-            custom
+            Global,
+            Sfx,
+            Music,
+            UI,
+            Custom
         }
 
-        static Dictionary<VolumeType, float> audioVolumes = new Dictionary<VolumeType, float>()
+        static readonly Dictionary<VolumeType, float> audioVolumes = new Dictionary<VolumeType, float>()
         {
-            { VolumeType.sfx,    1f },
-            { VolumeType.music,  1f },
-            { VolumeType.global, 1f },
-            { VolumeType.custom, 1f },
+            { VolumeType.Global, 1f },
+            { VolumeType.Sfx,    1f },
+            { VolumeType.Music,  1f },
+            { VolumeType.UI,     1f },
+            { VolumeType.Custom, 1f },
         };
 
         /// <summary>
         /// Gets the current volume level for the specified audio type.
         /// </summary>
-        /// <returns>The volume level for the specified audio type, as a value between 0.0 (silent) and 1.0 (maximum volume).</returns>
+        /// <returns>The volume level for the specified audio type.</returns>
         public static float GetVolume(VolumeType volumeType)
         {
             return audioVolumes[volumeType];
@@ -52,21 +54,26 @@ namespace UnityUtils.ScriptUtils.Audio {
         }
 
         /// <summary>
-        /// Does multiplication to volume types to the get right audio levels.
+        /// Returns the final volume after applying both the type volume
+        /// and (unless the type is Global) the global volume.
         /// </summary>
         /// <returns>
         /// Proper volume level based on audio type.
         /// </returns>
-        public static float CalculateVolumeBasedOnType(float volume, VolumeType volumeType) => volumeType switch
+        public static float CalculateVolumeBasedOnType(float volume, VolumeType volumeType)
         {
-            VolumeType.sfx    => MultiplyByGlobalVolume(volume) * GetVolume(VolumeType.sfx),
-            VolumeType.music  => MultiplyByGlobalVolume(volume) * GetVolume(VolumeType.music),
-            VolumeType.global => MultiplyByGlobalVolume(volume),
-            VolumeType.custom => MultiplyByGlobalVolume(volume) * GetVolume(VolumeType.custom),
-            _                 => MultiplyByGlobalVolume(volume),
-        };
+            float result = volume * GetVolume(volumeType);
 
-        private static float MultiplyByGlobalVolume(float volume) => volume * GetVolume(VolumeType.global);
+            if (volumeType != VolumeType.Global)
+                result *= GetVolume(VolumeType.Global);
+
+            return result;
+        }
+
+        /// <summary>
+        /// Multiplies the specified volume by the current global volume level.
+        /// </summary>
+        public static float MultiplyByGlobalVolume(float volume) => volume * GetVolume(VolumeType.Global);
 
         /// <summary>
         /// Calculates the effective playback duration of an audio clip after adjusting for pitch.

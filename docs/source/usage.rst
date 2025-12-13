@@ -17,7 +17,7 @@ Installing Unity Utils
    If you want to only install specific :doc:`scriptutils` follow :ref:`Downloading Script Utils`.
    
 1. To install Unity Utils, first go to the `Unity Utils GitHub <https://github.com/my-dimons/Unity-Utils/tree/main>`_.
-2. Click the green button and download the project as a .zip.
+2. Click the 'Code' button and download the project as a .zip.
 3. Unzip the downloaded file.
 4. Finally load the folder "Unity Utils" inside the extracted file into Unity Hub and launch!
 

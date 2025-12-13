@@ -1,16 +1,8 @@
 var searchData=
 [
-  ['scriptableobjectmanager_0',['ScriptableObjectManager',['../class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html',1,'UnityUtils::ScriptUtils::ScriptableObjects']]],
-  ['scriptableobjectmanager_2ecs_1',['ScriptableObjectManager.cs',['../_scriptable_object_manager_8cs.html',1,'']]],
-  ['setparticlesystemcolor_2',['SetParticleSystemColor',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html#afe98bf9e10d104bd4006f180a711d525',1,'UnityUtils::ScriptUtils::Particles::ParticleManager']]],
-  ['setparticlesystemgradientcolor_3',['SetParticleSystemGradientColor',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html#ae7048d2ac5b8d75ed5d49e8608d47aac',1,'UnityUtils::ScriptUtils::Particles::ParticleManager']]],
-  ['setvolume_4',['SetVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a096134c5684b1ef0d8f46d9c0cf9a6a6',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
-  ['sfx_5',['sfx',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
-  ['sfxmanager_6',['SfxManager',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html',1,'UnityUtils::ScriptUtils::Audio']]],
-  ['sfxmanager_2ecs_7',['SFXManager.cs',['../_s_f_x_manager_8cs.html',1,'']]],
-  ['singletonexample_8',['SingletonExample',['../class_singleton_example.html',1,'']]],
-  ['singletonexample_2ecs_9',['SingletonExample.cs',['../_singleton_example_8cs.html',1,'']]],
-  ['spawnburstparticle_10',['SpawnBurstParticle',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html#a9c686ddb9044958c4c695304c23fa602',1,'UnityUtils::ScriptUtils::Particles::ParticleManager']]],
-  ['startcontinuousmusic_11',['StartContinuousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a04ced0973b67e3cc4830767edfacb606',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
-  ['stopmusic_12',['StopMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a82e502951ecdb1a090d31f684b3a5cd8',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]]
+  ['objectanimations_0',['ObjectAnimations',['../class_unity_utils_1_1_script_utils_1_1_object_animations.html',1,'UnityUtils::ScriptUtils']]],
+  ['objectanimations_2ecs_1',['ObjectAnimations.cs',['../_object_animations_8cs.html',1,'']]],
+  ['onpointerclick_2',['OnPointerClick',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a4097c5e00c6d00f209b2718449c3710d',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
+  ['onpointerenter_3',['OnPointerEnter',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a87f3aa32d0069c9e275ac82e5804fb9d',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerEnter()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a9659493dd310e72215a17de4676f2587',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.OnPointerEnter()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a098921ae8917b2ab59d8e2449319c486',1,'UnityUtils.ScriptUtils.UI.UIButtonSFX.OnPointerEnter()']]],
+  ['onpointerexit_4',['OnPointerExit',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a137b177c8790a2a8c539277d2c634dfb',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerExit()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a628c4f403336feee5dc4f9ea955eaa67',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.OnPointerExit()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#aba00af17f744dac7f08360605fb2d914',1,'UnityUtils.ScriptUtils.UI.UIButtonSFX.OnPointerExit()']]]
 ];
