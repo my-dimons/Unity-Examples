@@ -9,7 +9,7 @@ Installation
 Installing Script Utils
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Download the `.unitypackage <https://github.com/my-dimons/Unity-Utils/blob/main/ScriptUtils.unitypackage>`_.
-2. Open the Unity project you want to import the package into.
-3. Navigate to Assets -> Import Package -> Custom Package and select the downloaded .unitypackage
-4. Select all assets (If not already selected), and click import.
+1. Open the Unity Package Manager in the project you want to import Script Utils into
+2. Click the "+" to add a new package and select "git URL"
+3. Enter "https://github.com/my-dimons/Unity-Utils.git?path=/Unity Utils/Packages/UnityUtils" into the text box
+4. Wait for it to import and your done!
