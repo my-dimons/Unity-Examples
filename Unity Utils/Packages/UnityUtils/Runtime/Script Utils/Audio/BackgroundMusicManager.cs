@@ -55,6 +55,9 @@ namespace UnityUtils.ScriptUtils.Audio
         /// If true, will output a Debug.Log the <see cref="randomSecondCooldownBetweenSongs"/> when calculated.
         public bool logRandomSongCooldown;
 
+        /// If true, will output a Debug.Log when the fade time is not 0 or 1 (When its animating).
+        public bool logFadeVolume;
+
         /// If true, will output a Debug.Log every <see cref="logSongProgessEveryPercent"/>, detailing how much of the current song has been played.
         public bool logSongProgress;
         /// Will only log song progress every <see cref="logSongProgessEveryPercent"/> percent.
@@ -91,11 +94,18 @@ namespace UnityUtils.ScriptUtils.Audio
         {
             CalculateMusicVolume();
 
+            #region Debug.Logs
             if (playingMusicCoroutine != null && musicSource.isPlaying && logSongProgress)
             {
                 DebugSongProgress();
             }
-            //Debug.Log("Fade Volume: " + fadeVolume);
+
+            bool fadeVolumeInRange = fadeVolume > 0 && fadeVolume < 1;
+            if (logFadeVolume && fadeVolumeInRange)
+            {
+                Debug.Log("Fade volume: " + fadeVolume);
+            }
+            #endregion
         }
 
         private void CalculateMusicVolume()

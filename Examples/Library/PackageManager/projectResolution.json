@@ -1,0 +1,325 @@
+{
+  "context": {
+    "projectPath": "/home/mydimons/Documents/GitHub/Unity-Examples/Examples/Packages",
+    "unityVersion": "6000.2.7f2"
+  },
+  "inputs": [
+    "/home/mydimons/Documents/GitHub/Unity-Examples/Examples/Packages/manifest.json",
+    "/home/mydimons/Documents/GitHub/Unity-Examples/Examples/Packages/packages-lock.json",
+    "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/BuiltInPackagesCombined.sha1"
+  ],
+  "outputs": {
+    "com.unity.multiplayer.center@1.0.0": {
+      "name": "com.unity.multiplayer.center",
+      "displayName": "Multiplayer Center",
+      "resolvedPath": "/home/mydimons/Documents/GitHub/Unity-Examples/Examples/Library/PackageCache/com.unity.multiplayer.center@f5e57a8bed06",
+      "fingerprint": "f5e57a8bed0637672c58142b1bfd7e6fea03746c",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.toolchain.linux-x86_64@2.0.11": {
+      "name": "com.unity.toolchain.linux-x86_64",
+      "displayName": "Toolchain Linux x64",
+      "resolvedPath": "/home/mydimons/Documents/GitHub/Unity-Examples/Examples/Library/PackageCache/com.unity.toolchain.linux-x86_64@53b88ff74b51",
+      "fingerprint": "53b88ff74b51ed43afb11336ab6f5495d1f91478",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.11",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.modules.accessibility@1.0.0": {
+      "name": "com.unity.modules.accessibility",
+      "displayName": "Accessibility",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.accessibility",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.ai@1.0.0": {
+      "name": "com.unity.modules.ai",
+      "displayName": "AI",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.ai",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.androidjni@1.0.0": {
+      "name": "com.unity.modules.androidjni",
+      "displayName": "Android JNI",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.androidjni",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.animation@1.0.0": {
+      "name": "com.unity.modules.animation",
+      "displayName": "Animation",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.animation",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.assetbundle@1.0.0": {
+      "name": "com.unity.modules.assetbundle",
+      "displayName": "Asset Bundle",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.assetbundle",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.audio@1.0.0": {
+      "name": "com.unity.modules.audio",
+      "displayName": "Audio",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.audio",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.cloth@1.0.0": {
+      "name": "com.unity.modules.cloth",
+      "displayName": "Cloth",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.cloth",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.director@1.0.0": {
+      "name": "com.unity.modules.director",
+      "displayName": "Director",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.director",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.imageconversion@1.0.0": {
+      "name": "com.unity.modules.imageconversion",
+      "displayName": "Image Conversion",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.imageconversion",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.imgui@1.0.0": {
+      "name": "com.unity.modules.imgui",
+      "displayName": "IMGUI",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.imgui",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.jsonserialize@1.0.0": {
+      "name": "com.unity.modules.jsonserialize",
+      "displayName": "JSONSerialize",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.jsonserialize",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.particlesystem@1.0.0": {
+      "name": "com.unity.modules.particlesystem",
+      "displayName": "Particle System",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.particlesystem",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.physics@1.0.0": {
+      "name": "com.unity.modules.physics",
+      "displayName": "Physics",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.physics2d@1.0.0": {
+      "name": "com.unity.modules.physics2d",
+      "displayName": "Physics 2D",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics2d",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.screencapture@1.0.0": {
+      "name": "com.unity.modules.screencapture",
+      "displayName": "Screen Capture",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.screencapture",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.terrain@1.0.0": {
+      "name": "com.unity.modules.terrain",
+      "displayName": "Terrain",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrain",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.terrainphysics@1.0.0": {
+      "name": "com.unity.modules.terrainphysics",
+      "displayName": "Terrain Physics",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrainphysics",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.tilemap@1.0.0": {
+      "name": "com.unity.modules.tilemap",
+      "displayName": "Tilemap",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.tilemap",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.ui@1.0.0": {
+      "name": "com.unity.modules.ui",
+      "displayName": "UI",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.ui",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.uielements@1.0.0": {
+      "name": "com.unity.modules.uielements",
+      "displayName": "UIElements",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.uielements",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.umbra@1.0.0": {
+      "name": "com.unity.modules.umbra",
+      "displayName": "Umbra",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.umbra",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.unityanalytics@1.0.0": {
+      "name": "com.unity.modules.unityanalytics",
+      "displayName": "Unity Analytics",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unityanalytics",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.unitywebrequest@1.0.0": {
+      "name": "com.unity.modules.unitywebrequest",
+      "displayName": "Unity Web Request",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequest",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.unitywebrequestassetbundle@1.0.0": {
+      "name": "com.unity.modules.unitywebrequestassetbundle",
+      "displayName": "Unity Web Request Asset Bundle",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestassetbundle",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.unitywebrequestaudio@1.0.0": {
+      "name": "com.unity.modules.unitywebrequestaudio",
+      "displayName": "Unity Web Request Audio",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestaudio",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.unitywebrequesttexture@1.0.0": {
+      "name": "com.unity.modules.unitywebrequesttexture",
+      "displayName": "Unity Web Request Texture",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequesttexture",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.unitywebrequestwww@1.0.0": {
+      "name": "com.unity.modules.unitywebrequestwww",
+      "displayName": "Unity Web Request WWW",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestwww",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.vehicles@1.0.0": {
+      "name": "com.unity.modules.vehicles",
+      "displayName": "Vehicles",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.vehicles",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.video@1.0.0": {
+      "name": "com.unity.modules.video",
+      "displayName": "Video",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.video",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.vr@1.0.0": {
+      "name": "com.unity.modules.vr",
+      "displayName": "VR",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.vr",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.wind@1.0.0": {
+      "name": "com.unity.modules.wind",
+      "displayName": "Wind",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.wind",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.xr@1.0.0": {
+      "name": "com.unity.modules.xr",
+      "displayName": "XR",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.xr",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.subsystems@1.0.0": {
+      "name": "com.unity.modules.subsystems",
+      "displayName": "Subsystems",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.subsystems",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.hierarchycore@1.0.0": {
+      "name": "com.unity.modules.hierarchycore",
+      "displayName": "Hierarchy Core",
+      "resolvedPath": "/home/mydimons/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.modules.hierarchycore",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.sysroot@2.0.10": {
+      "name": "com.unity.sysroot",
+      "displayName": "Sysroot Base",
+      "resolvedPath": "/home/mydimons/Documents/GitHub/Unity-Examples/Examples/Library/PackageCache/com.unity.sysroot@7bbbb9339c14",
+      "fingerprint": "7bbbb9339c143f6fbccaeb0a52c77b9217b35a71",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.10",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.sysroot.linux-x86_64@2.0.9": {
+      "name": "com.unity.sysroot.linux-x86_64",
+      "displayName": "Sysroot Linux x64",
+      "resolvedPath": "/home/mydimons/Documents/GitHub/Unity-Examples/Examples/Library/PackageCache/com.unity.sysroot.linux-x86_64@1998d1c7730e",
+      "fingerprint": "1998d1c7730e48fa49f28d983fececfc9cbd970b",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.0.9",
+      "source": "registry",
+      "testable": false
+    }
+  }
+}
