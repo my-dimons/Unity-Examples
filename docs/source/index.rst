@@ -8,9 +8,13 @@ how to :ref:`installation` the project.
 
 View the GitHub repo here: https://github.com/my-dimons/Unity-Utils
 
-.. warning::
+.. note::
 
-   This project is under heavy and (semi) rapid development.
+   This project is under heavy and (semi) rapid development. 
+   
+.. tip::
+
+   To help with Unity Utils's development, consider joining the discord (https://discord.gg/dQ2pNTBZKD), or making a PR on GitHub!
 
 Contents
 --------

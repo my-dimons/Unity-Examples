@@ -55,9 +55,9 @@ namespace UnityUtils.ScriptUtils.Audio
         /// If true, will output a Debug.Log the <see cref="randomSecondCooldownBetweenSongs"/> when calculated.
         public bool logRandomSongCooldown;
 
-        /// If true, will output a Debug.Log every frame, detailing how much of the current song has been played.
+        /// If true, will output a Debug.Log every <see cref="logSongProgessEveryPercent"/>, detailing how much of the current song has been played.
         public bool logSongProgress;
-        /// Will only log song progerss every logSongProgessEveryPercent percent.
+        /// Will only log song progress every <see cref="logSongProgessEveryPercent"/> percent.
         public float logSongProgessEveryPercent = 1;
         private float lastLoggedPercent;
 

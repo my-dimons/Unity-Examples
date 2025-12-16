@@ -10,10 +10,9 @@ BackgroundMusicManager
    
 The **BackgroundMusicManager** is used for quickly adding music to your games. It allows you to cycle through random songs with some adjustable properties for fading songs and have random delay between songs.
 
-.. tip::
-   
-   * Use .wav format audio for better audio quality.
-   * Turn on "Run in Background" in the `Unity settings <https://discussions.unity.com/t/how-do-you-keep-your-game-running-even-when-you-switch-out-of-it/928>`_, if you don't the script may bug out when tabbing out and into the game.
+.. warning::
+   Turn on "Run in Background" in the `Unity settings <https://discussions.unity.com/t/how-do-you-keep-your-game-  running-even-when-you-switch-out-of-it/928>`_, 
+   if you don't the script may bug out when tabbing in/out of the game.
    
 Example Usage
 -------------
@@ -24,19 +23,22 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
-     public BackgroundMusicManager manager;
      void Start()
      {
    	   // Start playing music.
-   	   manager.StartContinuousMusic();
+   	   BackgroundMusicManager.Instance.StartContinuousMusic();
    	      	   
    	   // Stop playing music.
-   	   manager.StopMusic();
+   	   BackgroundMusicManager.Instance.StopContinuousMusic();
    	}
    }
    
 Functions
 ---------
+
+.. tip::
+   
+   Use .wav format audio for better audio quality and looping!
 
 .. doxygenclass:: UnityUtils::ScriptUtils::Audio::BackgroundMusicManager
    :members:
