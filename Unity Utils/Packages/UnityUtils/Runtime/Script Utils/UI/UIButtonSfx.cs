@@ -53,7 +53,7 @@ namespace UnityUtils.ScriptUtils.UI
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            if (hoverEnterSfx != null)
+            if (hoverExitSfx != null)
                 SfxManager.PlaySfxAudioClip(hoverExitSfx, hoverExitVolume, pitchVariance, volumeType);
             else if (emptySfxErrorMessages)
                 Debug.LogWarning("No hover exit SFX on button!");
@@ -61,7 +61,7 @@ namespace UnityUtils.ScriptUtils.UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            if (hoverEnterSfx != null)
+            if (clickSfx != null)
                 SfxManager.PlaySfxAudioClip(clickSfx, clickVolume, pitchVariance, volumeType);
             else if (emptySfxErrorMessages)
                 Debug.LogWarning("No click SFX on button!");
