@@ -12,7 +12,7 @@ namespace UnityUtils.ScriptUtils.UI
         public float hoverRotation = 8f;
 
         /// The amount of seconds that the button will rotate in.
-        public float rotationAnimationSeconds = 0.2f;
+        public float rotationAnimationSeconds = 0.1f;
 
         /// If true the button will rotate to the set position, the rotate back on hover. If false the buton will rotate to the set position, then only rotate back when unhovering.
         public bool rotateBackAfterHover = true;
@@ -20,7 +20,7 @@ namespace UnityUtils.ScriptUtils.UI
         [Space(8)]
 
         /// true to use unscaled real time for the animation (ignoring time scale).
-        public bool useRealtime;
+        public bool useRealtime = true;
 
         /// The <see cref="AnimationCurve"/> that the button will follow.
         public AnimationCurve SizingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
@@ -33,11 +33,12 @@ namespace UnityUtils.ScriptUtils.UI
         public Vector2 randomRotation = new Vector2(-5f, 5f);
         private Vector3 currentRandomRotation;
 
-
         [Header("Debug Values")]
 
         /// True if the button is being hovered
         public bool hoveringOverButton;
+
+        [Header("Debug Logs")]
 
         Vector3 originalRotation;
         Vector3 hoverRotationVector;

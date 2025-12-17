@@ -9,15 +9,15 @@ namespace UnityUtils.ScriptUtils.UI
     {
         [Header("Adjustable Values")]
         /// When hovered this is the size the button will be set to.
-        public float hoverSize = 1.3f;
+        public float hoverSize = 1.1f;
 
         /// The amount of seconds that the button will size up or down in.
-        public float sizeAnimationSeconds = 0.2f;
+        public float sizeAnimationSeconds = 0.1f;
 
         [Space(8)]
 
         /// true to use unscaled real time for the animation (ignoring time scale)
-        public bool useRealtime;
+        public bool useRealtime = true;
 
         /// The <see cref="AnimationCurve"/> that the button will follow.
         public AnimationCurve SizingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
