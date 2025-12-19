@@ -10,15 +10,18 @@ namespace UnityUtils.ScriptUtils.Particles
         /// </summary>
         /// <param name="particlePrefab">Particle system to spawn (Gameobject with particle system applied).</param>
         /// <param name="position">Position to spawn the particlePrefab at.</param>
+        /// <param name="parent">Parent to parent the prefab to on spawn</param>
         /// <param name="color">Color to set the particlePrefab to.</param>
         /// <param name="gradient">Gradient to set the particlePrefab to</param>
-        public static void SpawnBurstParticle(GameObject particlePrefab, Vector3 position, Color color = default, Gradient gradient = default)
+        public static void SpawnBurstParticle(GameObject particlePrefab, Vector3 position, Transform parent = null, Color color = default, Gradient gradient = default)
         {
             GameObject particleInstance = Object.Instantiate(particlePrefab, position, Quaternion.identity);
             ParticleSystem ps = GetParticleSystem(particleInstance);
 
             if (color != default) SetParticleSystemColor(particleInstance, color);
             else if (gradient != default) SetParticleSystemGradientColor(particleInstance, gradient);
+
+            if (parent != null) particleInstance.transform.parent = parent;
 
             ps.Play();
 
