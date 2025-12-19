@@ -4,6 +4,9 @@ Plans
 Future plans for Unity-Utils:
 
 1. More UI Button Scripts
+   1.1 UI Button spawn burst particle
+   1.2 UI Button toggle object
+   1.3 Change button sfx to use min and max sfx
 2. More debug logs
 3. Damage Flash
 4. Color manager (Things like modifying colors, and converting hexadecimal)
