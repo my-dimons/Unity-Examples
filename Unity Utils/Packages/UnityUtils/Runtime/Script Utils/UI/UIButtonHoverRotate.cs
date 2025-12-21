@@ -46,6 +46,15 @@ namespace UnityUtils.ScriptUtils.UI
 
         [Header("Debug Logs")]
 
+        /// Log on any rotate
+        public bool logRotate;
+        /// Log first rotate to set rotation.
+        public bool logRotateSetPos;
+        /// Log second rotate back to default rotation.
+        public bool logRotateBack;
+        /// If <see cref="useRandomRotation"/> is true, will log when the random pos is generated.
+        public bool logRandomRotation;
+
         Vector3 originalRotation;
         Vector3 hoverRotationVector;
 
@@ -94,6 +103,13 @@ namespace UnityUtils.ScriptUtils.UI
             currentRandomRotation = new Vector3(originalRotation.x, originalRotation.y, Random.Range(randomRotation.x, randomRotation.y));
 
             ObjectAnimations.AnimateTransformRotation(applyTransform, originalRotation, useRandomRotation ? currentRandomRotation : hoverRotationVector, rotationAnimationSeconds, useRealtime, SizingCurve);
+
+            if (logRotateSetPos)
+                Debug.Log("Rotating button to set rotation");
+            if (logRandomRotation && useRandomRotation)
+                Debug.Log("Generated random rotation: " + currentRandomRotation);
+
+            DebugRotate();
         }
 
         /// <summary>
@@ -102,6 +118,17 @@ namespace UnityUtils.ScriptUtils.UI
         void ExitHoverAnimation()
         {
             ObjectAnimations.AnimateTransformRotation(applyTransform, useRandomRotation ? currentRandomRotation : hoverRotationVector, originalRotation, rotationAnimationSeconds, useRealtime, SizingCurve);
+            
+            if (logRotateBack)
+                Debug.Log("Rotating button back");
+
+            DebugRotate();
+        }
+
+        private void DebugRotate()
+        {
+            if (logRotate)
+                Debug.Log("Rotated button");
         }
 
         void Reset()

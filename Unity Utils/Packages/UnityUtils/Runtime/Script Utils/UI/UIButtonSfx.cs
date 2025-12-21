@@ -45,13 +45,13 @@ namespace UnityUtils.ScriptUtils.UI
         [Header("Debug")]
 
         /// If true this will log errors when trying to play sound effects but they become empty
-        public bool emptySfxErrorMessages;
+        public bool logEmptySfx;
 
         public void OnPointerEnter(PointerEventData eventData)
         {
             if (hoverEnterSfx != null)
                 SfxManager.PlaySfxAudioClip(hoverEnterSfx, hoverEnterVolume, pitchVariance, volumeType);
-            else if (emptySfxErrorMessages)
+            else if (logEmptySfx)
                 Debug.LogWarning("No hover enter SFX on button!");
         }
 
@@ -62,7 +62,7 @@ namespace UnityUtils.ScriptUtils.UI
 
             if (hoverExitSfx != null)
                 SfxManager.PlaySfxAudioClip(hoverExitSfx, hoverExitVolume, pitchVariance, volumeType);
-            else if (emptySfxErrorMessages)
+            else if (logEmptySfx)
                 Debug.LogWarning("No hover exit SFX on button!");
         }
 
@@ -76,7 +76,7 @@ namespace UnityUtils.ScriptUtils.UI
 
             if (clickSfx != null)
                 SfxManager.PlaySfxAudioClip(clickSfx, clickVolume, pitchVariance, volumeType);
-            else if (emptySfxErrorMessages)
+            else if (logEmptySfx)
                 Debug.LogWarning("No click SFX on button!");
         }
     }

@@ -35,6 +35,13 @@ namespace UnityUtils.ScriptUtils.UI
 
         [Header("Debug Logs")]
 
+        /// Log on any scaling
+        public bool logScale;
+        /// Log first scale to set scale.
+        public bool logScaleUp;
+        /// Log second rotate back to default pos.
+        public bool logScaleDown;
+
         Vector3 originalSize;
         Vector3 hoverSizeVector;
 
@@ -78,6 +85,11 @@ namespace UnityUtils.ScriptUtils.UI
         void EnterHoverAnimation()
         {
             ObjectAnimations.AnimateTransformScale(applyTransform, originalSize, hoverSizeVector, sizeAnimationSeconds, useRealtime, SizingCurve);
+
+            if (logScaleUp)
+                Debug.Log("Scaling button up");
+
+            DebugRotate();
         }
 
         /// <summary>
@@ -86,6 +98,17 @@ namespace UnityUtils.ScriptUtils.UI
         void ExitHoverAnimation()
         {
             ObjectAnimations.AnimateTransformScale(applyTransform, hoverSizeVector, originalSize, sizeAnimationSeconds, useRealtime, SizingCurve);
+
+            if (logScaleDown)
+                Debug.Log("Scaling button down");
+
+            DebugRotate();
+        }
+
+        private void DebugRotate()
+        {
+            if (logScale)
+                Debug.Log("Scaled button");
         }
 
         void Reset()

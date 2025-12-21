@@ -4,6 +4,7 @@
 - ObjectDelays.cs
 - "Objects" folder for ObjectAnimations and ObjectDelays
 - UI Button animations have a variable for applied transform
+- More Debug.Logs() in button scripts
 
 
 ### Changes
