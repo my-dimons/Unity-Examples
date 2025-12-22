@@ -38,8 +38,6 @@ namespace UnityUtils.ScriptUtils.UI
         /// Type of audio to use to get proper audio levels.
         public AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx;
 
-        /// If true, this button will not call click SFX, because loading scenes and spawning an object at the same time will cause errors
-        public bool sceneSwitcherButton;
         private bool sceneLoadTriggered;
 
         [Header("Debug")]
@@ -68,7 +66,7 @@ namespace UnityUtils.ScriptUtils.UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            if (sceneSwitcherButton)
+            if (GetComponent<UIButtonSceneSwitcher>())
             {
                 sceneLoadTriggered = true;
                 return;

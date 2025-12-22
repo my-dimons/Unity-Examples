@@ -16,9 +16,9 @@ using UnityUtils.ScriptUtils.Objects;
  */
 
 namespace UnityUtils.ScriptUtils.Audio
-{
+{   
     [RequireComponent(typeof(AudioSource))]
-    public class BackgroundMusicManager : MonoBehaviour
+    public class SimpleBackgroundMusic : MonoBehaviour
     {
         private AudioSource musicSource;
 
@@ -64,7 +64,7 @@ namespace UnityUtils.ScriptUtils.Audio
         public float logSongProgessEveryPercent = 1;
         private float lastLoggedPercent;
 
-        public static BackgroundMusicManager Instance { get; private set; }
+        public static SimpleBackgroundMusic Instance { get; private set; }
 
         public Coroutine playingMusicCoroutine;
 

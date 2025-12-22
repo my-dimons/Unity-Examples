@@ -408,6 +408,7 @@ GameObject:
   - component: {fileID: 1106750808}
   - component: {fileID: 1106750807}
   - component: {fileID: 1106750806}
+  - component: {fileID: 1106750809}
   m_Layer: 5
   m_Name: change scene
   m_TagString: Untagged
@@ -490,19 +491,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1106750804}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1106750802}
-        m_TargetAssemblyTypeName: TestingScript2, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: UI Button Scene
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1106750804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,8 +550,7 @@ MonoBehaviour:
   clickVolume: 1
   pitchVariance: 0.1
   volumeType: 1
-  sceneSwitcherButton: 1
-  emptySfxErrorMessages: 0
+  logEmptySfx: 0
 --- !u!114 &1106750807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +593,12 @@ MonoBehaviour:
     m_RotationOrder: 4
   useRandomRotation: 0
   randomRotation: {x: -5, y: 5}
+  applyTransform: {fileID: 0}
   hoveringOverButton: 0
+  logRotate: 0
+  logRotateSetPos: 0
+  logRotateBack: 0
+  logRandomRotation: 0
 --- !u!114 &1106750808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,7 +638,27 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  applyTransform: {fileID: 0}
   hoveringOverButton: 0
+  logScale: 0
+  logScaleUp: 0
+  logScaleDown: 0
+--- !u!114 &1106750809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106750800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d605731ab85c484da44f0476bcee6a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.UI.UIButtonSceneSwitcher
+  sceneName: UIButtonScene
+  buildIndex: -1
+  sceneMode: 0
+  logSwitch: 0
 --- !u!1 &1339990754
 GameObject:
   m_ObjectHideFlags: 0

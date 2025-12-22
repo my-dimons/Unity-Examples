@@ -11,8 +11,14 @@ namespace UnityUtils.ScriptUtils.UI
     public class UIButtonDebugLogs : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [Header("Debug")]
+
+        /// Will output a Debug.Log when the button is hovered over.
         public bool logHover = true;
+
+        /// Will output a Debug.Log when the button's hover is exited.
         public bool logExit = true;
+
+        /// Will output a Debug.Log when the button is clicked.
         public bool logClick = true;
 
         public void OnPointerEnter(PointerEventData eventData)

@@ -1,14 +1,10 @@
-BackgroundMusicManager
+SimpleBackgroundMusic
 ==========
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Audio`
-
-.. note::
-
-   This script requires :doc:`AudioManager` to function properly.
    
-The **BackgroundMusicManager** is used for quickly adding music to your games. It allows you to cycle through random songs with some adjustable properties for fading songs and have random delay between songs.
+The **SimpleBackgroundMusic** is used for quickly adding music to your games. It allows you to cycle through random songs with some adjustable properties for fading songs and have random delay between songs.
 
 .. warning::
    Turn on "Run in Background" in the `Unity settings <https://discussions.unity.com/t/how-do-you-keep-your-game-  running-even-when-you-switch-out-of-it/928>`_, 
@@ -26,10 +22,10 @@ Example Usage
      void Start()
      {
    	   // Start playing music.
-   	   BackgroundMusicManager.Instance.StartContinuousMusic();
+   	   SimpleBackgroundMusic.Instance.StartContinuousMusic();
    	      	   
    	   // Stop playing music.
-   	   BackgroundMusicManager.Instance.StopContinuousMusic();
+   	   SimpleBackgroundMusic.Instance.StopContinuousMusic();
    	}
    }
    
@@ -40,6 +36,6 @@ Functions
    
    Use .wav format audio for better audio quality and looping!
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Audio::BackgroundMusicManager
+.. doxygenclass:: UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic
    :members:
    :exclude-members: Instance

@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 330572093}
   - component: {fileID: 330572094}
   - component: {fileID: 330572095}
+  - component: {fileID: 330572096}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -204,19 +205,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 330572091}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 912077195}
-        m_TargetAssemblyTypeName: TestingScript2, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Scene Swapper
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &330572091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,8 +264,7 @@ MonoBehaviour:
   clickVolume: 1
   pitchVariance: 0.2
   volumeType: 1
-  sceneSwitcherButton: 1
-  emptySfxErrorMessages: 0
+  logEmptySfx: 0
 --- !u!114 &330572094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,6 +309,10 @@ MonoBehaviour:
   randomRotation: {x: -5, y: 5}
   applyTransform: {fileID: 330572088}
   hoveringOverButton: 0
+  logRotate: 0
+  logRotateSetPos: 0
+  logRotateBack: 0
+  logRandomRotation: 0
 --- !u!114 &330572095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +354,25 @@ MonoBehaviour:
     m_RotationOrder: 4
   applyTransform: {fileID: 330572088}
   hoveringOverButton: 0
+  logScale: 0
+  logScaleUp: 0
+  logScaleDown: 0
+--- !u!114 &330572096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330572087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d605731ab85c484da44f0476bcee6a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.UI.UIButtonSceneSwitcher
+  sceneName: SceneSwapper
+  buildIndex: -1
+  sceneMode: 0
+  logSwitch: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

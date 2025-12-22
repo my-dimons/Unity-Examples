@@ -3,10 +3,6 @@ UIButtonSfx
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.UI`
-
-.. note::
-
-   This script requires :doc:`AudioManager` to function properly.
    
 Usage
 -------------

@@ -3,11 +3,7 @@ AudioManager
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Audio`
-   
-.. note::
-
-   This script requires :doc:`AudioManager` to function properly.
-   
+      
 The **AudioManager** is used for managing audio types for things like sfx, and music. It provides functions for calculating volume based on a volume type so you can easily play sounds at a consistent volume!
 
 Example Usage
