@@ -1011,6 +1011,7 @@ GameObject:
   - component: {fileID: 912077193}
   - component: {fileID: 912077192}
   - component: {fileID: 912077195}
+  - component: {fileID: 912077196}
   m_Layer: 0
   m_Name: test
   m_TagString: Untagged
@@ -1141,6 +1142,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 367c7423aa2008fba8df621a892d76bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TestingScript2
+--- !u!114 &912077196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912077191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.DamageFlash
+  flashMaterial: {fileID: 0}
 --- !u!1 &1251111284
 GameObject:
   m_ObjectHideFlags: 0
