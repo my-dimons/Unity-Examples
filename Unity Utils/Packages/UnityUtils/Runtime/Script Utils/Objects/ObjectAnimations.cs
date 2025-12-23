@@ -65,6 +65,16 @@ namespace UnityUtils.ScriptUtils.Objects
 
             AnimateValue<float>(startOpacity, endOpacity, duration, (a, b, t) => Mathf.Lerp(a, b, t), value => image.color = new Color(color.r, color.g, color.b, value), useRealtime, animationCurve);
         }
+
+        /// <summary>
+        /// Animates an objects <see cref="CanvasGroup"/> component alpha from a starting value to an ending value over a specified duration.
+        /// </summary>
+        public static void AnimateCanvasGroupOpacity(CanvasGroup group, float startOpacity, float endOpacity, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
+        {
+            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+
+            AnimateValue<float>(startOpacity, endOpacity, duration, (a, b, t) => Mathf.Lerp(a, b, t), value => group.alpha = value, useRealtime, animationCurve);
+        }
         #endregion
 
         #region Audio
