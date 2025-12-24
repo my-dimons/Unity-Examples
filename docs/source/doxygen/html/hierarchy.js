@@ -26,6 +26,7 @@ var hierarchy =
       [ "UnityUtils.ScriptUtils.Audio.AudioSlider", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html", null ],
       [ "UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html", null ],
       [ "UnityUtils.ScriptUtils.CoroutineHelper", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html", null ],
+      [ "UnityUtils.ScriptUtils.Objects.ObjectColorFlash", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonDebugLogs", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverExpand", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverRotate", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html", null ],

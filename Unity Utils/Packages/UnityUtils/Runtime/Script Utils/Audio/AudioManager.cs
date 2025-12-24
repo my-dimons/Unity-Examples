@@ -9,8 +9,11 @@ namespace UnityUtils.ScriptUtils.Audio
     /// </summary>
     public static class AudioManager
     {
+        /// Maximum audio volume.
         public static readonly float MAX_AUDIO_VOLUME = 1f;
+        /// Minimum audio volume.
         public static readonly float MIN_AUDIO_VOLUME = 0f;
+        /// Default pitch variance used around the package.
         public static readonly float DEFAULT_PITCH_VARIANCE = 0.1f;
 
         /// Holds different audio types for volume calculations

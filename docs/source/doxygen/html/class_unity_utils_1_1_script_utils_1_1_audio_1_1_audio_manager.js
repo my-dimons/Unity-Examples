@@ -14,5 +14,8 @@ var class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager =
     [ "GetVolume", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a36656b98992ea5778e3ca6f2b1316516", null ],
     [ "ModifyVolume", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a938dc9ab15c02a784ecb8921812f88f4", null ],
     [ "MultiplyByGlobalVolume", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0b0a5e413f1f381a80658aaae7256203", null ],
-    [ "SetVolume", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a096134c5684b1ef0d8f46d9c0cf9a6a6", null ]
+    [ "SetVolume", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a096134c5684b1ef0d8f46d9c0cf9a6a6", null ],
+    [ "DEFAULT_PITCH_VARIANCE", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#accac3c7a664d09bedb32446fe960b5b6", null ],
+    [ "MAX_AUDIO_VOLUME", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a44fb1563612ac5da2219803e57f58e9b", null ],
+    [ "MIN_AUDIO_VOLUME", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#abbdee8e2aeebf83c85a98c11f7b97a7a", null ]
 ];

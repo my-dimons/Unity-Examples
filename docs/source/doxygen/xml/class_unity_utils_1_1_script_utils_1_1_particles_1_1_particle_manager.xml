@@ -41,7 +41,7 @@
 <parametername>particlePrefab</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Particle system to spawn (Gameobject with particle system applied).</para>
+<para>Particle system to spawn (Gameobject with particle system applied)</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -49,7 +49,7 @@
 <parametername>position</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Position to spawn the particlePrefab at.</para>
+<para>Position to spawn the particlePrefab at</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -65,7 +65,7 @@
 <parametername>color</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Color to set the particlePrefab to.</para>
+<para>Color to set the particlePrefab to</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>

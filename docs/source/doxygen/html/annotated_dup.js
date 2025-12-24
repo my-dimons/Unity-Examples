@@ -13,6 +13,7 @@ var annotated_dup =
         ] ],
         [ "Objects", "namespace_unity_utils_1_1_script_utils_1_1_objects.html", [
           [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" ],
+          [ "ObjectColorFlash", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash" ],
           [ "ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" ]
         ] ],
         [ "Particles", "namespace_unity_utils_1_1_script_utils_1_1_particles.html", [

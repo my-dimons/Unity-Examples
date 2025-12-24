@@ -3,8 +3,8 @@
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::Audio::AudioSlider</compoundname>
     <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" prot="public" static="no" mutable="no">
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" prot="private" static="no" mutable="no">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref></type>
         <definition>AudioManager.VolumeType UnityUtils.ScriptUtils.Audio.AudioSlider.volumeType</definition>
         <argsstring></argsstring>
@@ -17,8 +17,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" line="10" column="39" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" bodystart="10" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" line="10" column="41" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1afff0763872c0932a90bbdb0a807d38c6" prot="public" static="no" mutable="no">
         <type>bool</type>
         <definition>bool UnityUtils.ScriptUtils.Audio.AudioSlider.debugLogs</definition>
@@ -94,13 +96,6 @@
         <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>volumeType</edgelabel>
-        </childnode>
-      </node>
-      <node id="3">
-        <label>UnityUtils.ScriptUtils.Audio.AudioManager</label>
-        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
       </node>
     </collaborationgraph>
     <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" line="7" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" bodystart="8" bodyend="32"/>
@@ -108,7 +103,7 @@
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1afff0763872c0932a90bbdb0a807d38c6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>debugLogs</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1adfa58fe07a2daa25b8f787a9d72f5092" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>OnSliderValueChanged</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a83a056228d7e8d67f2dc5f96b0b21d66" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>Start</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>volumeType</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>volumeType</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

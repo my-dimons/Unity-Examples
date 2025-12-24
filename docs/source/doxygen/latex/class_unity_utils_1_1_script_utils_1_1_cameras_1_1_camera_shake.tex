@@ -4,14 +4,12 @@
 \begin{DoxyCompactItemize}
 \item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a315ce8d6cfc7c18cef165dc4eed951fc}{Screenshake}} (Transform camera=default, float intensity=1, float duration=0.\+5f, Animation\+Curve curve=default, bool use\+Realtime=true)
-\item 
-static IEnumerator \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a3e43ce25d2ec4c2550f4101917566047}{Screenshake\+Coroutine}} (Transform camera, float intensity, float duration, Animation\+Curve curve, bool use\+Realtime)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Shakes the inputted camera for a specified amount of time with a certain intensity following an animation curve. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 static Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_ac341fab1ebeb74397156f271e5a3a8d1}{default\+Screenshake\+Curve}}
-\begin{DoxyCompactList}\small\item\em Default curve used when. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Default curve used for screenshake. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -23,12 +21,23 @@ static Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_
 {\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a315ce8d6cfc7c18cef165dc4eed951fc} 
 void Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+Screenshake (\begin{DoxyParamCaption}\item[{Transform}]{camera}{ = {\ttfamily default}, }\item[{float}]{intensity}{ = {\ttfamily 1}, }\item[{float}]{duration}{ = {\ttfamily 0\+:\+:5f}, }\item[{Animation\+Curve}]{curve}{ = {\ttfamily default}, }\item[{bool}]{use\+Realtime}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a3e43ce25d2ec4c2550f4101917566047}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!ScreenshakeCoroutine@{ScreenshakeCoroutine}}
-\index{ScreenshakeCoroutine@{ScreenshakeCoroutine}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
-\doxysubsubsection{\texorpdfstring{ScreenshakeCoroutine()}{ScreenshakeCoroutine()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a3e43ce25d2ec4c2550f4101917566047} 
-IEnumerator Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+Screenshake\+Coroutine (\begin{DoxyParamCaption}\item[{Transform}]{camera}{, }\item[{float}]{intensity}{, }\item[{float}]{duration}{, }\item[{Animation\+Curve}]{curve}{, }\item[{bool}]{use\+Realtime}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
+
+Shakes the inputted camera for a specified amount of time with a certain intensity following an animation curve. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & Camera to apply screenshake to, default is Camera.\+main\\
+\hline
+{\em intensity} & A multiplier for more screenshake\\
+\hline
+{\em duration} & How many seconds the screenshake lasts for\\
+\hline
+{\em curve} & Curve used to apply screenshake\\
+\hline
+{\em use\+Realtime} & If true, will use Time.\+unscaled\+Deltatime, instead of Time.\+delta\+Time\\
+\hline
+\end{DoxyParams}
 
 
 \label{doc-variable-members}
@@ -43,15 +52,15 @@ Animation\+Curve Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+defaul
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=\ \textcolor{keyword}{new}\ AnimationCurve(}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(0,\ 0),}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(0.2f,\ 0.1f,\ -\/0.05f,\ -\/0.05f),}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(1,\ 0)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(0,\ 0),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(0.2f,\ 0.1f,\ -\/0.05f,\ -\/0.05f),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(1,\ 0)}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ )}
 
 \end{DoxyCode}
 
 
-Default curve used when. 
+Default curve used for screenshake. 
 
 
 

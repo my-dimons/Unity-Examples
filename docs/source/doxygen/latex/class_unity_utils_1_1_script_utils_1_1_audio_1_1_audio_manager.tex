@@ -25,7 +25,7 @@ static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_a
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a938dc9ab15c02a784ecb8921812f88f4}{Modify\+Volume}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type, float volume)
 \begin{DoxyCompactList}\small\item\em Adjusts the volume for the specified audio type by adding the given value to its current volume. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a096134c5684b1ef0d8f46d9c0cf9a6a6}{Set\+Volume}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type, float volume)
-\begin{DoxyCompactList}\small\item\em Sets the volume level for the specified audio type to the new volume. Clamps to a range between 0-\/1 inclusive. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (0-\/1). \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a6842171f65007a880eac46610f5676b5}{Calculate\+Volume\+Based\+On\+Type}} (float volume, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type)
 \begin{DoxyCompactList}\small\item\em Returns the final volume after applying both the type volume and (unless the type is Global) the global volume. \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0b0a5e413f1f381a80658aaae7256203}{Multiply\+By\+Global\+Volume}} (float volume)
@@ -36,6 +36,15 @@ static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_a
 \begin{DoxyCompactList}\small\item\em Calculates the pitch adjustment factor needed to play an audio clip at a specified duration. \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3f7535559b788c3fdd18b161f7310774}{Calculate\+Pitch\+Variance}} (float pitch\+Variance)
 \begin{DoxyCompactList}\small\item\em Calculates the pitch variance to add randomness to playback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a44fb1563612ac5da2219803e57f58e9b}{MAX\+\_\+\+AUDIO\+\_\+\+VOLUME}} = 1f
+\begin{DoxyCompactList}\small\item\em Maximum audio volume. \end{DoxyCompactList}\item 
+static readonly float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_abbdee8e2aeebf83c85a98c11f7b97a7a}{MIN\+\_\+\+AUDIO\+\_\+\+VOLUME}} = 0f
+\begin{DoxyCompactList}\small\item\em Minimum audio volume. \end{DoxyCompactList}\item 
+static readonly float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_accac3c7a664d09bedb32446fe960b5b6}{DEFAULT\+\_\+\+PITCH\+\_\+\+VARIANCE}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em Default pitch variance used around the package. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -174,7 +183,42 @@ void Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Set\+Volume (\begin
 
 
 
-Sets the volume level for the specified audio type to the new volume. Clamps to a range between 0-\/1 inclusive. 
+Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (0-\/1). 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_accac3c7a664d09bedb32446fe960b5b6}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!DEFAULT\_PITCH\_VARIANCE@{DEFAULT\_PITCH\_VARIANCE}}
+\index{DEFAULT\_PITCH\_VARIANCE@{DEFAULT\_PITCH\_VARIANCE}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PITCH\_VARIANCE}{DEFAULT\_PITCH\_VARIANCE}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_accac3c7a664d09bedb32446fe960b5b6} 
+readonly float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+DEFAULT\+\_\+\+PITCH\+\_\+\+VARIANCE = 0.\+1f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Default pitch variance used around the package. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a44fb1563612ac5da2219803e57f58e9b}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!MAX\_AUDIO\_VOLUME@{MAX\_AUDIO\_VOLUME}}
+\index{MAX\_AUDIO\_VOLUME@{MAX\_AUDIO\_VOLUME}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
+\doxysubsubsection{\texorpdfstring{MAX\_AUDIO\_VOLUME}{MAX\_AUDIO\_VOLUME}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a44fb1563612ac5da2219803e57f58e9b} 
+readonly float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+MAX\+\_\+\+AUDIO\+\_\+\+VOLUME = 1f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Maximum audio volume. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_abbdee8e2aeebf83c85a98c11f7b97a7a}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!MIN\_AUDIO\_VOLUME@{MIN\_AUDIO\_VOLUME}}
+\index{MIN\_AUDIO\_VOLUME@{MIN\_AUDIO\_VOLUME}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
+\doxysubsubsection{\texorpdfstring{MIN\_AUDIO\_VOLUME}{MIN\_AUDIO\_VOLUME}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_abbdee8e2aeebf83c85a98c11f7b97a7a} 
+readonly float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+MIN\+\_\+\+AUDIO\+\_\+\+VOLUME = 0f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Minimum audio volume. 
 
 
 

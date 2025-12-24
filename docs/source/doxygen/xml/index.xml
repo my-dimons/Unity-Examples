@@ -7,6 +7,9 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" kind="enumvalue"><name>Music</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b" kind="enumvalue"><name>UI</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af" kind="enumvalue"><name>Custom</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a44fb1563612ac5da2219803e57f58e9b" kind="variable"><name>MAX_AUDIO_VOLUME</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1abbdee8e2aeebf83c85a98c11f7b97a7a" kind="variable"><name>MIN_AUDIO_VOLUME</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1accac3c7a664d09bedb32446fe960b5b6" kind="variable"><name>DEFAULT_PITCH_VARIANCE</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a97ad4c4a1cf0f888a121cfe61d1d895a" kind="variable"><name>audioVolumes</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a36656b98992ea5778e3ca6f2b1316516" kind="function"><name>GetVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a938dc9ab15c02a784ecb8921812f88f4" kind="function"><name>ModifyVolume</name></member>
@@ -41,11 +44,26 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a344d3c7a2922a75ed499cfa9ea8df0c3" kind="function"><name>AnimateTransformRotation</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a07c0bc09840985348b0ab5a3544bf624" kind="function"><name>AnimateSpriteRendererOpacity</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1af920f3b90483071cba43c2ada4b442dc" kind="function"><name>AnimateImageOpacity</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a2de39f298dfcca85c69a0a28a0f10f49" kind="function"><name>AnimateCanvasGroupOpacity</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a1148e7dac20e76f0608bcdef0f8496cd" kind="function"><name>AnimateAudioVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1ad69193b5f38d27d69ba12fee3594bf86" kind="function"><name>FadeOutAudio</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1aff1b70dd806db24eebfb5342b29d230c" kind="function"><name>FadeInAudio</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a4d6f9195d4e1e4e744be05acec4ce836" kind="function"><name>AnimateValue&lt; T &gt;</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9df873f3c77ef3cd9c13864d809d391e" kind="function"><name>AnimateValueCoroutine&lt; T &gt;</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectColorFlash</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a82149eff67d25cc96dca85c16be7a9fc" kind="variable"><name>logLoadMaterial</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1acec64469a432a8891392d9a9842bd832" kind="variable"><name>logFlash</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a30c5be54746bff0d8a5ceac9f690d751" kind="variable"><name>flashMaterial</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1aa4f631c48875315841a8ee13084596cd" kind="variable"><name>originalMaterial</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32be537da55293c963761358d6a4ba19" kind="variable"><name>spriteRenderer</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a7b66d4817ea097f4cdab9060c7c968f3" kind="variable"><name>originalColor</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1abde9b586d6ab319fd58ba31f373dc07c" kind="variable"><name>flashRoutine</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a730e7199608ceab0a95985911ddee866" kind="variable"><name>MATERIAL_PATH</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a32d41790e2ebaa471fba32f69d7bac37" kind="function"><name>Start</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a8cd72420f1e60c79a7b83e7bdf25a527" kind="function"><name>FlashRoutine</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a12b13abbbf0473fc7109c427bbe86195" kind="function"><name>FlashWhite</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash_1a257118e32e2bad3f8407aeb55298cd33" kind="function"><name>FlashColor</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectDelays</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a8bb3511fda789bb85a298deeb9b46ef1" kind="function"><name>FlipBoolAfterTime</name></member>
@@ -65,7 +83,6 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager_1ad376e448c4e3b09d4545ac4ccd881653" kind="function"><name>GetScriptableObjects&lt; T &gt;</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager" kind="class"><name>UnityUtils::ScriptUtils::Audio::SfxManager</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1a92fa5e3be797bbd9354ea22ef9dc036d" kind="variable"><name>DEFAULT_PITCH_VARIANCE</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ac9b3d1cbb84ba0c3ff9a4cc05afb4b44" kind="function"><name>PlaySfxAudioClip</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1adcbe0d61861918f7834d42fba958cd43" kind="function"><name>PlayTimedSFXAudioClip</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1af2b057b6a3c7a73edbe6243fdc43a714" kind="function"><name>PlaySpacialSfxAudioClip</name></member>
@@ -210,6 +227,8 @@
   </compound>
   <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
   </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
   <compound refid="namespace_unity_1_1_visual_scripting" kind="namespace"><name>Unity::VisualScripting</name>
   </compound>
   <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
@@ -251,6 +270,8 @@
   <compound refid="_coroutine_helper_8cs" kind="file"><name>CoroutineHelper.cs</name>
   </compound>
   <compound refid="_object_animations_8cs" kind="file"><name>ObjectAnimations.cs</name>
+  </compound>
+  <compound refid="_object_color_flash_8cs" kind="file"><name>ObjectColorFlash.cs</name>
   </compound>
   <compound refid="_object_delays_8cs" kind="file"><name>ObjectDelays.cs</name>
   </compound>

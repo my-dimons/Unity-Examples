@@ -1,6 +1,7 @@
 var class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations =
 [
     [ "AnimateAudioVolume", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#a1148e7dac20e76f0608bcdef0f8496cd", null ],
+    [ "AnimateCanvasGroupOpacity", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#a2de39f298dfcca85c69a0a28a0f10f49", null ],
     [ "AnimateImageOpacity", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#af920f3b90483071cba43c2ada4b442dc", null ],
     [ "AnimateSpriteRendererOpacity", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#a07c0bc09840985348b0ab5a3544bf624", null ],
     [ "AnimateTransformPosition", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#a3dda9891e9cd6c372083add7518a2d2e", null ],

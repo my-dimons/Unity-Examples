@@ -28,7 +28,7 @@
         <argsstring></argsstring>
         <name>hoverEnterVolume</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverEnterVolume</qualifiedname>
-        <initializer>= 1f</initializer>
+        <initializer>= AudioManager.MAX_AUDIO_VOLUME</initializer>
         <briefdescription>
 <para>Volume to play <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae952e6b7f589bc3b221416e0d417c313" kindref="member">hoverEnterSfx</ref> at. </para>
         </briefdescription>
@@ -59,7 +59,7 @@
         <argsstring></argsstring>
         <name>hoverExitVolume</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverExitVolume</qualifiedname>
-        <initializer>= 1f</initializer>
+        <initializer>= AudioManager.MAX_AUDIO_VOLUME</initializer>
         <briefdescription>
 <para>Volume to play <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ac3dca7053abf536976fd9a7323cef821" kindref="member">hoverExitSfx</ref> at. </para>
         </briefdescription>
@@ -90,7 +90,7 @@
         <argsstring></argsstring>
         <name>clickVolume</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.clickVolume</qualifiedname>
-        <initializer>= 1f</initializer>
+        <initializer>= AudioManager.MAX_AUDIO_VOLUME</initializer>
         <briefdescription>
 <para>Volume to play <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1adc89b9acd4f48169e335c470ea3214b0" kindref="member">clickSfx</ref> at. </para>
         </briefdescription>
@@ -106,7 +106,7 @@
         <argsstring></argsstring>
         <name>pitchVariance</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.pitchVariance</qualifiedname>
-        <initializer>= 0.1f</initializer>
+        <initializer>= AudioManager.DEFAULT_PITCH_VARIANCE</initializer>
         <briefdescription>
 <para>Random variance to play all audio clips at. </para>
         </briefdescription>
