@@ -32,9 +32,5 @@ Example Usage
 Functions
 ---------
 
-.. tip::
-   
-   Use .wav format audio for better audio quality and looping!
-
 .. doxygenclass:: UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic
    :members:
