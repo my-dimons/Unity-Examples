@@ -53,7 +53,7 @@
 <parametername>pitchVariance</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Random variance to make sound feel less repetative. randomly modifies the pitch of the MusicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1accac3c7a664d09bedb32446fe960b5b6" kindref="member">AudioManager.DEFAULT_PITCH_VARIANCE</ref> is the default value). </para>
+<para>Random variance to make sound feel less repetative. randomly modifies the pitch of the MusicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1ad93ccc0080852c3ba0f9367520bcc712" kindref="member">AudioManager.DEFAULT_PITCH_VARIANCE</ref> is the default value). </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="80" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="80" bodyend="111"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="80" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="80" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae9503d55ecfed4c01d939714a2453689" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -347,14 +347,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="113" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="113" bodyend="123"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="115" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="115" bodyend="125"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="16" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="17" bodyend="124"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" line="16" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="17" bodyend="126"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1a66454cc1a0540e896823beb3047dab48" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>CreateAndPlayAudioClip</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae9503d55ecfed4c01d939714a2453689" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>PlayAudioClipOnSource</name></member>

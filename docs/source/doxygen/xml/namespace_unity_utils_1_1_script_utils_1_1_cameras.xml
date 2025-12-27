@@ -2,11 +2,12 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_cameras" kind="namespace" language="C#">
     <compoundname>UnityUtils::ScriptUtils::Cameras</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard" prot="public">UnityUtils::ScriptUtils::Cameras::CameraBillboard</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake" prot="public">UnityUtils::ScriptUtils::Cameras::CameraShake</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="4" column="1"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraBillboard.cs" line="5" column="1"/>
   </compounddef>
 </doxygen>

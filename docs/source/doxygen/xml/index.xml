@@ -7,9 +7,9 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" kind="enumvalue"><name>Music</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b" kind="enumvalue"><name>UI</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af" kind="enumvalue"><name>Custom</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a44fb1563612ac5da2219803e57f58e9b" kind="variable"><name>MAX_AUDIO_VOLUME</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1abbdee8e2aeebf83c85a98c11f7b97a7a" kind="variable"><name>MIN_AUDIO_VOLUME</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1accac3c7a664d09bedb32446fe960b5b6" kind="variable"><name>DEFAULT_PITCH_VARIANCE</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3d858e08e9ebddb2664c8c09373f76b1" kind="variable"><name>MAX_AUDIO_VOLUME</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a951691ccb7f9df99c9c0b0f4bb0c8cca" kind="variable"><name>MIN_AUDIO_VOLUME</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1ad93ccc0080852c3ba0f9367520bcc712" kind="variable"><name>DEFAULT_PITCH_VARIANCE</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a97ad4c4a1cf0f888a121cfe61d1d895a" kind="variable"><name>audioVolumes</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a36656b98992ea5778e3ca6f2b1316516" kind="function"><name>GetVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a938dc9ab15c02a784ecb8921812f88f4" kind="function"><name>ModifyVolume</name></member>
@@ -22,9 +22,19 @@
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider" kind="class"><name>UnityUtils::ScriptUtils::Audio::AudioSlider</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" kind="variable"><name>volumeType</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1afff0763872c0932a90bbdb0a807d38c6" kind="variable"><name>debugLogs</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1af5a30be32c7e1bd871a1ed4b3c029cbc" kind="variable"><name>logSliderValueChange</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1ac7b7c40894bf34764dc3f298579812c8" kind="variable"><name>slider</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a83a056228d7e8d67f2dc5f96b0b21d66" kind="function"><name>Start</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1adfa58fe07a2daa25b8f787a9d72f5092" kind="function"><name>OnSliderValueChanged</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a775806c538a3606bc6e49289cd4f63bf" kind="function"><name>SetSliderValue</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard" kind="class"><name>UnityUtils::ScriptUtils::Cameras::CameraBillboard</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1aae650d2f829a586bad689e9178de9a8a" kind="variable"><name>useMainCamera</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1afc2d3b69d1262e9d944150ede012fe93" kind="variable"><name>billboardCamera</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1acc4e01c9d65eff9a22e19b33c913494c" kind="variable"><name>extraAngleRotation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1a6e9734dc5383d6c65af4d1a7c1efa9eb" kind="function"><name>Update</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1aad9e27e594e19bce281e7adbacef1fd0" kind="function"><name>LateUpdate</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard_1a716c232454a0eabf180e19bf82e18bc1" kind="function"><name>LookAtCamera</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake" kind="class"><name>UnityUtils::ScriptUtils::Cameras::CameraShake</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1ac341fab1ebeb74397156f271e5a3a8d1" kind="variable"><name>defaultScreenshakeCurve</name></member>
@@ -39,6 +49,7 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aa0388a1af00e1e7f677b5a80ebffb8ad" kind="function"><name>OnDestroy</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectAnimations</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a289435ae48a81655836da28694c630f6" kind="variable"><name>defaultAnimationCurve</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9a2ff84f56bd60da378ded5dd42c44a3" kind="function"><name>AnimateTransformScale</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a3dda9891e9cd6c372083add7518a2d2e" kind="function"><name>AnimateTransformPosition</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a344d3c7a2922a75ed499cfa9ea8df0c3" kind="function"><name>AnimateTransformRotation</name></member>
@@ -151,6 +162,27 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a87f3aa32d0069c9e275ac82e5804fb9d" kind="function"><name>OnPointerEnter</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a137b177c8790a2a8c539277d2c634dfb" kind="function"><name>OnPointerExit</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a92688cb0434ed95b8d04813b9aeb4386" kind="variable"><name>hoverLocalPosition</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a89424366b7a0b4d78b7b0182c06bc15f" kind="variable"><name>sizeAnimationSeconds</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ad02debd2f2df229a908e231289a39ef1" kind="variable"><name>useRealtime</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae5b8ba3814d39b73fe09caf2f28cfeb2" kind="variable"><name>SizingCurve</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a8e400b70467c6244a5ce00f5f8b77dfd" kind="variable"><name>applyTransform</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aba17f4ad2c0913a07f7ae58d16cbfd9e" kind="variable"><name>hoveringOverButton</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae41c258a5ef53a311e56edbd7fe1ffd8" kind="variable"><name>logScale</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a44c0dd1d01aa1b521843fa50bc458b8c" kind="variable"><name>logScaleUp</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae43a901d1ab8a03c83a4010cf14afffb" kind="variable"><name>logScaleDown</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a41fcf4117710fa70be8f85c48496c1d6" kind="variable"><name>originalPosition</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aeb63632e0700a05f79defffae50b49ce" kind="variable"><name>hoverPositionVector</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a3e3f9d2615c4a43277ec1d033e367411" kind="function"><name>Start</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae6fc150ade3c9d5144755ed7691909f6" kind="function"><name>Update</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a0a353c3bef16f69cbeb3da009c472b6e" kind="function"><name>EnterHoverAnimation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a41950c8fe8591a2471b7b94c0e0c2872" kind="function"><name>ExitHoverAnimation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a5e7759fc3a398f2fe09f3a0b85c49566" kind="function"><name>DebugRotate</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1abf6a889d835ff70ba6a5fc59c85b4498" kind="function"><name>Reset</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a98ffd4766abd2d847915ee38253544d2" kind="function"><name>OnPointerEnter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a26e53e56fe011ab9accbbc8ee0827b4a" kind="function"><name>OnPointerExit</name></member>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a58b696f4d89343633bdcdbdd2531d772" kind="variable"><name>hoverRotation</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a5e39b92b4fce792a762e67c87cc99596" kind="variable"><name>rotationAnimationSeconds</name></member>
@@ -229,6 +261,8 @@
   </compound>
   <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
   </compound>
+  <compound refid="namespace_system_1_1_transactions" kind="namespace"><name>System::Transactions</name>
+  </compound>
   <compound refid="namespace_unity_1_1_visual_scripting" kind="namespace"><name>Unity::VisualScripting</name>
   </compound>
   <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
@@ -265,6 +299,8 @@
   </compound>
   <compound refid="_simple_background_music_8cs" kind="file"><name>SimpleBackgroundMusic.cs</name>
   </compound>
+  <compound refid="_camera_billboard_8cs" kind="file"><name>CameraBillboard.cs</name>
+  </compound>
   <compound refid="_camera_shake_8cs" kind="file"><name>CameraShake.cs</name>
   </compound>
   <compound refid="_coroutine_helper_8cs" kind="file"><name>CoroutineHelper.cs</name>
@@ -282,6 +318,8 @@
   <compound refid="_u_i_button_debug_logs_8cs" kind="file"><name>UIButtonDebugLogs.cs</name>
   </compound>
   <compound refid="_u_i_button_hover_expand_8cs" kind="file"><name>UIButtonHoverExpand.cs</name>
+  </compound>
+  <compound refid="_u_i_button_hover_position_8cs" kind="file"><name>UIButtonHoverPosition.cs</name>
   </compound>
   <compound refid="_u_i_button_hover_rotate_8cs" kind="file"><name>UIButtonHoverRotate.cs</name>
   </compound>

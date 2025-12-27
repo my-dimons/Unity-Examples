@@ -1,0 +1,153 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position}{}\label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+Inheritance diagram for Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.357576cm]{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a98ffd4766abd2d847915ee38253544d2}{On\+Pointer\+Enter}} (Pointer\+Event\+Data event\+Data)
+\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a26e53e56fe011ab9accbbc8ee0827b4a}{On\+Pointer\+Exit}} (Pointer\+Event\+Data event\+Data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a92688cb0434ed95b8d04813b9aeb4386}{hover\+Local\+Position}}
+\begin{DoxyCompactList}\small\item\em When hovered this is the size the button will be set to. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a89424366b7a0b4d78b7b0182c06bc15f}{size\+Animation\+Seconds}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em The amount of seconds that the button will size up or down in. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ad02debd2f2df229a908e231289a39ef1}{use\+Realtime}} = true
+\begin{DoxyCompactList}\small\item\em true to use unscaled real time for the animation (ignoring time scale) \end{DoxyCompactList}\item 
+Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae5b8ba3814d39b73fe09caf2f28cfeb2}{Sizing\+Curve}} = Animation\+Curve.\+Ease\+In\+Out(0, 0, 1, 1)
+\begin{DoxyCompactList}\small\item\em The Animation\+Curve that the button will follow. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a8e400b70467c6244a5ce00f5f8b77dfd}{apply\+Transform}}
+\begin{DoxyCompactList}\small\item\em The object to apply the transform to (Default\textquotesingle{}s to the applied object). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_aba17f4ad2c0913a07f7ae58d16cbfd9e}{hovering\+Over\+Button}}
+\begin{DoxyCompactList}\small\item\em True if the button is being hovered. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae41c258a5ef53a311e56edbd7fe1ffd8}{log\+Scale}}
+\begin{DoxyCompactList}\small\item\em Log on any scaling. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a44c0dd1d01aa1b521843fa50bc458b8c}{log\+Scale\+Up}}
+\begin{DoxyCompactList}\small\item\em Log first scale to set scale. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae43a901d1ab8a03c83a4010cf14afffb}{log\+Scale\+Down}}
+\begin{DoxyCompactList}\small\item\em Log second rotate back to default pos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a98ffd4766abd2d847915ee38253544d2}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!OnPointerEnter@{OnPointerEnter}}
+\index{OnPointerEnter@{OnPointerEnter}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{OnPointerEnter()}{OnPointerEnter()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a98ffd4766abd2d847915ee38253544d2} 
+void Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+On\+Pointer\+Enter (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Data}]{event\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a26e53e56fe011ab9accbbc8ee0827b4a}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!OnPointerExit@{OnPointerExit}}
+\index{OnPointerExit@{OnPointerExit}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{OnPointerExit()}{OnPointerExit()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a26e53e56fe011ab9accbbc8ee0827b4a} 
+void Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+On\+Pointer\+Exit (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Data}]{event\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a8e400b70467c6244a5ce00f5f8b77dfd}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!applyTransform@{applyTransform}}
+\index{applyTransform@{applyTransform}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{applyTransform}{applyTransform}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a8e400b70467c6244a5ce00f5f8b77dfd} 
+Transform Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+apply\+Transform}
+
+
+
+The object to apply the transform to (Default\textquotesingle{}s to the applied object). 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_aba17f4ad2c0913a07f7ae58d16cbfd9e}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!hoveringOverButton@{hoveringOverButton}}
+\index{hoveringOverButton@{hoveringOverButton}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{hoveringOverButton}{hoveringOverButton}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_aba17f4ad2c0913a07f7ae58d16cbfd9e} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+hovering\+Over\+Button}
+
+
+
+True if the button is being hovered. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a92688cb0434ed95b8d04813b9aeb4386}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!hoverLocalPosition@{hoverLocalPosition}}
+\index{hoverLocalPosition@{hoverLocalPosition}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{hoverLocalPosition}{hoverLocalPosition}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a92688cb0434ed95b8d04813b9aeb4386} 
+Vector3 Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+hover\+Local\+Position}
+
+
+
+When hovered this is the size the button will be set to. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae41c258a5ef53a311e56edbd7fe1ffd8}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!logScale@{logScale}}
+\index{logScale@{logScale}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{logScale}{logScale}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae41c258a5ef53a311e56edbd7fe1ffd8} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+log\+Scale}
+
+
+
+Log on any scaling. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae43a901d1ab8a03c83a4010cf14afffb}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!logScaleDown@{logScaleDown}}
+\index{logScaleDown@{logScaleDown}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{logScaleDown}{logScaleDown}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae43a901d1ab8a03c83a4010cf14afffb} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+log\+Scale\+Down}
+
+
+
+Log second rotate back to default pos. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a44c0dd1d01aa1b521843fa50bc458b8c}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!logScaleUp@{logScaleUp}}
+\index{logScaleUp@{logScaleUp}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{logScaleUp}{logScaleUp}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a44c0dd1d01aa1b521843fa50bc458b8c} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+log\+Scale\+Up}
+
+
+
+Log first scale to set scale. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a89424366b7a0b4d78b7b0182c06bc15f}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!sizeAnimationSeconds@{sizeAnimationSeconds}}
+\index{sizeAnimationSeconds@{sizeAnimationSeconds}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{sizeAnimationSeconds}{sizeAnimationSeconds}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a89424366b7a0b4d78b7b0182c06bc15f} 
+float Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+size\+Animation\+Seconds = 0.\+1f}
+
+
+
+The amount of seconds that the button will size up or down in. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae5b8ba3814d39b73fe09caf2f28cfeb2}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!SizingCurve@{SizingCurve}}
+\index{SizingCurve@{SizingCurve}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{SizingCurve}{SizingCurve}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae5b8ba3814d39b73fe09caf2f28cfeb2} 
+Animation\+Curve Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+Sizing\+Curve = Animation\+Curve.\+Ease\+In\+Out(0, 0, 1, 1)}
+
+
+
+The Animation\+Curve that the button will follow. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ad02debd2f2df229a908e231289a39ef1}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!useRealtime@{useRealtime}}
+\index{useRealtime@{useRealtime}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{useRealtime}{useRealtime}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ad02debd2f2df229a908e231289a39ef1} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+use\+Realtime = true}
+
+
+
+true to use unscaled real time for the animation (ignoring time scale) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+UI/\mbox{\hyperlink{_u_i_button_hover_position_8cs}{UIButton\+Hover\+Position.\+cs}}\end{DoxyCompactItemize}

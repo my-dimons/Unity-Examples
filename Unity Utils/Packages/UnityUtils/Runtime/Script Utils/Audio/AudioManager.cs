@@ -55,7 +55,7 @@ namespace UnityUtils.ScriptUtils.Audio
         }
 
         /// <summary>
-        /// Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (0-1)
+        /// Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (<see cref="MIN_AUDIO_VOLUME"/>, <see cref="MAX_AUDIO_VOLUME"/>)
         /// </summary>
         public static void SetVolume(VolumeType volumeType, float volume)
         {
@@ -64,7 +64,7 @@ namespace UnityUtils.ScriptUtils.Audio
 
         /// <summary>
         /// Returns the final volume after applying both the type volume
-        /// and (unless the type is Global) the global volume.
+        /// and the global volume (unless volumeType is <see cref="VolumeType.Global"/>).
         /// </summary>
         /// <returns>
         /// Proper volume level based on audio type.

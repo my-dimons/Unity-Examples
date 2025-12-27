@@ -212,7 +212,7 @@
         <name>EnterHoverAnimation</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.EnterHoverAnimation</qualifiedname>
         <briefdescription>
-<para>Grows the button to the original size (hoverSizeVector). </para>
+<para>Grows the button to the set size: (hoverSizeVector). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>

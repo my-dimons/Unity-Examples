@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerEnterHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerExitHandler</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a92688cb0434ed95b8d04813b9aeb4386" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.hoverLocalPosition</definition>
+        <argsstring></argsstring>
+        <name>hoverLocalPosition</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.hoverLocalPosition</qualifiedname>
+        <briefdescription>
+<para>When hovered this is the size the button will be set to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="13" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a89424366b7a0b4d78b7b0182c06bc15f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.sizeAnimationSeconds</definition>
+        <argsstring></argsstring>
+        <name>sizeAnimationSeconds</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.sizeAnimationSeconds</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+<para>The amount of seconds that the button will size up or down in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="16" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ad02debd2f2df229a908e231289a39ef1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.useRealtime</definition>
+        <argsstring></argsstring>
+        <name>useRealtime</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.useRealtime</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>true to use unscaled real time for the animation (ignoring time scale) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="21" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae5b8ba3814d39b73fe09caf2f28cfeb2" prot="public" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.SizingCurve</definition>
+        <argsstring></argsstring>
+        <name>SizingCurve</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.SizingCurve</qualifiedname>
+        <initializer>= AnimationCurve.EaseInOut(0, 0, 1, 1)</initializer>
+        <briefdescription>
+<para>The AnimationCurve that the button will follow. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="24" column="31" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a8e400b70467c6244a5ce00f5f8b77dfd" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.applyTransform</definition>
+        <argsstring></argsstring>
+        <name>applyTransform</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.applyTransform</qualifiedname>
+        <briefdescription>
+<para>The object to apply the transform to (Default&apos;s to the applied object). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="29" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aba17f4ad2c0913a07f7ae58d16cbfd9e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.hoveringOverButton</definition>
+        <argsstring></argsstring>
+        <name>hoveringOverButton</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.hoveringOverButton</qualifiedname>
+        <briefdescription>
+<para>True if the button is being hovered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="34" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae41c258a5ef53a311e56edbd7fe1ffd8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScale</definition>
+        <argsstring></argsstring>
+        <name>logScale</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScale</qualifiedname>
+        <briefdescription>
+<para>Log on any scaling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="39" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a44c0dd1d01aa1b521843fa50bc458b8c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScaleUp</definition>
+        <argsstring></argsstring>
+        <name>logScaleUp</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScaleUp</qualifiedname>
+        <briefdescription>
+<para>Log first scale to set scale. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="41" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae43a901d1ab8a03c83a4010cf14afffb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScaleDown</definition>
+        <argsstring></argsstring>
+        <name>logScaleDown</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScaleDown</qualifiedname>
+        <briefdescription>
+<para>Log second rotate back to default pos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="43" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a41fcf4117710fa70be8f85c48496c1d6" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.originalPosition</definition>
+        <argsstring></argsstring>
+        <name>originalPosition</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.originalPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="45" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aeb63632e0700a05f79defffae50b49ce" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.hoverPositionVector</definition>
+        <argsstring></argsstring>
+        <name>hoverPositionVector</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.hoverPositionVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="46" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a3e3f9d2615c4a43277ec1d033e367411" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="49" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae6fc150ade3c9d5144755ed7691909f6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="55" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="55" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a0a353c3bef16f69cbeb3da009c472b6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.EnterHoverAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>EnterHoverAnimation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.EnterHoverAnimation</qualifiedname>
+        <briefdescription>
+<para>Moves the button to the set position: (hoverPositionVector). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="85" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="85" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a41950c8fe8591a2471b7b94c0e0c2872" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.ExitHoverAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>ExitHoverAnimation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.ExitHoverAnimation</qualifiedname>
+        <briefdescription>
+<para>Moves the button to its original position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="98" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="98" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a5e7759fc3a398f2fe09f3a0b85c49566" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.DebugRotate</definition>
+        <argsstring>()</argsstring>
+        <name>DebugRotate</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.DebugRotate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="108" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="108" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1abf6a889d835ff70ba6a5fc59c85b4498" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.Reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="114" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="114" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a98ffd4766abd2d847915ee38253544d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.OnPointerEnter</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerEnter</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.OnPointerEnter</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="66" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="66" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a26e53e56fe011ab9accbbc8ee0827b4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.OnPointerExit</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerExit</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.OnPointerExit</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="74" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="74" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="9" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="10" bodyend="118"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a8e400b70467c6244a5ce00f5f8b77dfd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>applyTransform</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a5e7759fc3a398f2fe09f3a0b85c49566" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>DebugRotate</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a0a353c3bef16f69cbeb3da009c472b6e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>EnterHoverAnimation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a41950c8fe8591a2471b7b94c0e0c2872" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>ExitHoverAnimation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aba17f4ad2c0913a07f7ae58d16cbfd9e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>hoveringOverButton</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a92688cb0434ed95b8d04813b9aeb4386" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>hoverLocalPosition</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aeb63632e0700a05f79defffae50b49ce" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>hoverPositionVector</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae41c258a5ef53a311e56edbd7fe1ffd8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>logScale</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae43a901d1ab8a03c83a4010cf14afffb" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>logScaleDown</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a44c0dd1d01aa1b521843fa50bc458b8c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>logScaleUp</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a98ffd4766abd2d847915ee38253544d2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>OnPointerEnter</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a26e53e56fe011ab9accbbc8ee0827b4a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>OnPointerExit</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a41fcf4117710fa70be8f85c48496c1d6" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>originalPosition</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1abf6a889d835ff70ba6a5fc59c85b4498" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>Reset</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a89424366b7a0b4d78b7b0182c06bc15f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>sizeAnimationSeconds</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae5b8ba3814d39b73fe09caf2f28cfeb2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>SizingCurve</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a3e3f9d2615c4a43277ec1d033e367411" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>Start</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae6fc150ade3c9d5144755ed7691909f6" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>Update</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ad02debd2f2df229a908e231289a39ef1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>useRealtime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

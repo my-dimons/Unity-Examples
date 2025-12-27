@@ -2,6 +2,23 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::Objects::ObjectAnimations</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a289435ae48a81655836da28694c630f6" prot="private" static="yes" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve UnityUtils.ScriptUtils.Objects.ObjectAnimations.defaultAnimationCurve</definition>
+        <argsstring></argsstring>
+        <name>defaultAnimationCurve</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.defaultAnimationCurve</qualifiedname>
+        <initializer>= AnimationCurve.Linear(0, 0, 1, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="12" column="39" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
     <sectiondef kind="public-static-func">
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9a2ff84f56bd60da378ded5dd42c44a3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -42,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="16" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="16" bodyend="21"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="18" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="18" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a3dda9891e9cd6c372083add7518a2d2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -83,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="26" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="26" bodyend="31"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="28" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="28" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a344d3c7a2922a75ed499cfa9ea8df0c3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -124,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="36" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="36" bodyend="41"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="38" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="38" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a07c0bc09840985348b0ab5a3544bf624" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -165,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="48" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="48" bodyend="55"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="50" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="50" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1af920f3b90483071cba43c2ada4b442dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -206,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="60" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="60" bodyend="67"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="62" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="62" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a2de39f298dfcca85c69a0a28a0f10f49" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -247,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="72" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="72" bodyend="77"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="74" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="74" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a1148e7dac20e76f0608bcdef0f8496cd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -283,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="84" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="84" bodyend="87"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="86" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="86" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1ad69193b5f38d27d69ba12fee3594bf86" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -311,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="92" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="92" bodyend="95"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="94" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="94" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1aff1b70dd806db24eebfb5342b29d230c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -344,7 +361,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="100" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="100" bodyend="103"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="102" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="102" bodyend="105"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a4d6f9195d4e1e4e744be05acec4ce836" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -399,7 +416,7 @@
 <parametername>onValueChanged</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</para>
+<para>A callback that is invoked with the current interpolated Vector3 value as the animation progresses</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -423,7 +440,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="113" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="113" bodyend="117"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="115" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="115" bodyend="119"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -468,14 +485,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="118" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="118" bodyend="137"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="120" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="120" bodyend="139"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="11" bodyend="138"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="11" bodyend="140"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a1148e7dac20e76f0608bcdef0f8496cd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateAudioVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a2de39f298dfcca85c69a0a28a0f10f49" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateCanvasGroupOpacity</name></member>
@@ -486,6 +503,7 @@
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9a2ff84f56bd60da378ded5dd42c44a3" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateTransformScale</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a4d6f9195d4e1e4e744be05acec4ce836" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateValue&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9df873f3c77ef3cd9c13864d809d391e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateValueCoroutine&lt; T &gt;</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a289435ae48a81655836da28694c630f6" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>defaultAnimationCurve</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1aff1b70dd806db24eebfb5342b29d230c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>FadeInAudio</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1ad69193b5f38d27d69ba12fee3594bf86" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>FadeOutAudio</name></member>
     </listofallmembers>
