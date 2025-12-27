@@ -7,27 +7,37 @@ namespace UnityUtils.ScriptUtils.Audio
     public class AudioSlider : MonoBehaviour
     {
         /// Type of audio volume to modify on update.
-        [SerializeField] private AudioManager.VolumeType volumeType;
+        public AudioManager.VolumeType volumeType;
 
         [Space(10)]
 
         /// If true, this will print a debug log of the updated volume on update. Warning: While being used, this will output lots of Debug.Logs.
-        public bool debugLogs = true;
+        public bool logSliderValueChange = true;
+
+        private Slider slider;
 
         void Start()
         {
-            Slider slider = GetComponent<Slider>();
+            slider = GetComponent<Slider>();
 
             slider.onValueChanged.AddListener(OnSliderValueChanged);
-            slider.value = AudioManager.GetVolume(volumeType);
+            SetSliderValue();
         }
 
         private void OnSliderValueChanged(float volume)
         {
             AudioManager.SetVolume(volumeType, volume);
 
-            if (debugLogs)
+            if (logSliderValueChange)
                 Debug.Log("Set " + volumeType + " Volume to: " + volume);
+        }
+
+        /// <summary>
+        /// Sets the slider's volume to the current <see cref="volumeType"/> value
+        /// </summary>
+        public void SetSliderValue()
+        {
+            slider.value = AudioManager.GetVolume(volumeType);
         }
     }
 }
